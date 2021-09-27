@@ -1,0 +1,12 @@
+C:\AccidentesTransito\AcciTransito.App\AcciTransito.App.Persistencia\obj\Debug\netstandard2.1\AcciTransito.App.Persistencia.csprojAssemblyReference.cache
+C:\AccidentesTransito\AcciTransito.App\AcciTransito.App.Persistencia\obj\Debug\netstandard2.1\AcciTransito.App.Persistencia.AssemblyInfoInputs.cache
+C:\AccidentesTransito\AcciTransito.App\AcciTransito.App.Persistencia\obj\Debug\netstandard2.1\AcciTransito.App.Persistencia.AssemblyInfo.cs
+C:\AccidentesTransito\AcciTransito.App\AcciTransito.App.Persistencia\obj\Debug\netstandard2.1\AcciTransito.App.Persistencia.csproj.CoreCompileInputs.cache
+C:\AccidentesTransito\AcciTransito.App\AcciTransito.App.Persistencia\bin\Debug\netstandard2.1\AcciTransito.App.Persistencia.deps.json
+C:\AccidentesTransito\AcciTransito.App\AcciTransito.App.Persistencia\bin\Debug\netstandard2.1\AcciTransito.App.Persistencia.dll
+C:\AccidentesTransito\AcciTransito.App\AcciTransito.App.Persistencia\bin\Debug\netstandard2.1\AcciTransito.App.Persistencia.pdb
+C:\AccidentesTransito\AcciTransito.App\AcciTransito.App.Persistencia\bin\Debug\netstandard2.1\AcciTransito.App.Dominio.dll
+C:\AccidentesTransito\AcciTransito.App\AcciTransito.App.Persistencia\bin\Debug\netstandard2.1\AcciTransito.App.Dominio.pdb
+C:\AccidentesTransito\AcciTransito.App\AcciTransito.App.Persistencia\obj\Debug\netstandard2.1\AcciTransito.App.Persistencia.csproj.CopyComplete
+C:\AccidentesTransito\AcciTransito.App\AcciTransito.App.Persistencia\obj\Debug\netstandard2.1\AcciTransito.App.Persistencia.dll
+C:\AccidentesTransito\AcciTransito.App\AcciTransito.App.Persistencia\obj\Debug\netstandard2.1\AcciTransito.App.Persistencia.pdb

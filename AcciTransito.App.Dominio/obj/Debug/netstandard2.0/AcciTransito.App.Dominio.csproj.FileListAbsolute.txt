@@ -1,0 +1,9 @@
+C:\AccidentesTransito\AcciTransito.App\AcciTransito.App.Dominio\bin\Debug\netstandard2.0\AcciTransito.App.Dominio.deps.json
+C:\AccidentesTransito\AcciTransito.App\AcciTransito.App.Dominio\bin\Debug\netstandard2.0\AcciTransito.App.Dominio.dll
+C:\AccidentesTransito\AcciTransito.App\AcciTransito.App.Dominio\bin\Debug\netstandard2.0\AcciTransito.App.Dominio.pdb
+C:\AccidentesTransito\AcciTransito.App\AcciTransito.App.Dominio\obj\Debug\netstandard2.0\AcciTransito.App.Dominio.csprojAssemblyReference.cache
+C:\AccidentesTransito\AcciTransito.App\AcciTransito.App.Dominio\obj\Debug\netstandard2.0\AcciTransito.App.Dominio.AssemblyInfoInputs.cache
+C:\AccidentesTransito\AcciTransito.App\AcciTransito.App.Dominio\obj\Debug\netstandard2.0\AcciTransito.App.Dominio.AssemblyInfo.cs
+C:\AccidentesTransito\AcciTransito.App\AcciTransito.App.Dominio\obj\Debug\netstandard2.0\AcciTransito.App.Dominio.csproj.CoreCompileInputs.cache
+C:\AccidentesTransito\AcciTransito.App\AcciTransito.App.Dominio\obj\Debug\netstandard2.0\AcciTransito.App.Dominio.dll
+C:\AccidentesTransito\AcciTransito.App\AcciTransito.App.Dominio\obj\Debug\netstandard2.0\AcciTransito.App.Dominio.pdb
