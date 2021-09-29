@@ -59,7 +59,7 @@ namespace AcciTransito.App.Consola
                 Apellidos="Habeych",
                 FechaNacimiento= new DateTime(1985, 11,12),
                 Direccion="Calle 122 No. 7-10",
-                //NumeroCelular= 3103467813 ,
+                //Genero
                 CorreoElectronico="oscar.habeych@gmail.com",
 
             };
