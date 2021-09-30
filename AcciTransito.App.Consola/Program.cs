@@ -34,7 +34,7 @@ namespace AcciTransito.App.Consola
                 Nombre = "Diego",
                 Apellidos="Villamizar",
                 FechaNacimiento= new DateTime(1980, 05,15),
-                Direccion="Calle 63 # 5.09",
+                Direccion="Calle 63 # 6.09",
                 //NumeroCelular= 3103467813 ,
                 CorreoElectronico="diegoarlesvc@hotmail.com",
 
