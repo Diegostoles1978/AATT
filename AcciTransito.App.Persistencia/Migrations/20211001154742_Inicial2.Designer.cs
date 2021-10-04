@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AcciTransito.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20210926164734_Init")]
-    partial class Init
+    [Migration("20211001154742_Inicial2")]
+    partial class Inicial2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -183,7 +183,7 @@ namespace AcciTransito.App.Persistencia.Migrations
 
                     b.HasIndex("Personaid");
 
-                    b.ToTable("Vehiculos");
+                    b.ToTable("Vehiculo");
                 });
 
             modelBuilder.Entity("AcciTransito.App.Dominio.Entidades.Accidente", b =>

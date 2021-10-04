@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "5dQCgrwD62WRCvkRbe6wuG0bdEEpbrd3pRU2cEKqRMjGK81pux8znwHTNlY54Ct5b7ZzR9RV0F9Z24aETbe8sQ==",
+  "dgSpecHash": "ljB3MDVvxKY1nurCefMW+UAwBHsgxt/IDRO1sqg3ccCO84FWoiZHRBe3l5/sbEXuCs3dHx9SmTdQhcw/onLv1g==",
   "success": true,
-  "projectFilePath": "C:\\AccidentesTransito\\AcciTransito.App\\AcciTransito.App.Dominio\\AcciTransito.App.Dominio.csproj",
+  "projectFilePath": "C:\\AccidentesTransitoVersion1.0\\AccidentesTransitoVersion1.0\\AppAccidentesdeTransito\\AcciTransito.App\\AcciTransito.App.Dominio\\AcciTransito.App.Dominio.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\mileniso\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\mileniso\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\diego\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\diego\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

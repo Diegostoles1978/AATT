@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace AcciTransito.App.Persistencia.Migrations
 {
-    public partial class Init : Migration
+    public partial class Inicial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -76,7 +76,7 @@ namespace AcciTransito.App.Persistencia.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Vehiculos",
+                name: "Vehiculo",
                 columns: table => new
                 {
                     id = table.Column<int>(type: "int", nullable: false)
@@ -90,9 +90,9 @@ namespace AcciTransito.App.Persistencia.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Vehiculos", x => x.id);
+                    table.PrimaryKey("PK_Vehiculo", x => x.id);
                     table.ForeignKey(
-                        name: "FK_Vehiculos_Personas_Personaid",
+                        name: "FK_Vehiculo_Personas_Personaid",
                         column: x => x.Personaid,
                         principalTable: "Personas",
                         principalColumn: "id",
@@ -135,9 +135,9 @@ namespace AcciTransito.App.Persistencia.Migrations
                         principalColumn: "id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Accidente_Vehiculos_Vehiculosid",
+                        name: "FK_Accidente_Vehiculo_Vehiculosid",
                         column: x => x.Vehiculosid,
-                        principalTable: "Vehiculos",
+                        principalTable: "Vehiculo",
                         principalColumn: "id",
                         onDelete: ReferentialAction.Restrict);
                 });
@@ -168,8 +168,8 @@ namespace AcciTransito.App.Persistencia.Migrations
                 column: "Generoid");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Vehiculos_Personaid",
-                table: "Vehiculos",
+                name: "IX_Vehiculo_Personaid",
+                table: "Vehiculo",
                 column: "Personaid");
         }
 
@@ -185,7 +185,7 @@ namespace AcciTransito.App.Persistencia.Migrations
                 name: "Coordenadas");
 
             migrationBuilder.DropTable(
-                name: "Vehiculos");
+                name: "Vehiculo");
 
             migrationBuilder.DropTable(
                 name: "Personas");

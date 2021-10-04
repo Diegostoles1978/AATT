@@ -11,16 +11,16 @@ namespace AcciTransito.App.Persistencia
         public DbSet<Personas> Personas {get;set;}
         public DbSet<Genero> Genero {get;set;}
         public DbSet<Coordenadas> Coordenadas {get;set;}
-        public DbSet<Vehiculo> Vehiculos {get;set;}
+        public DbSet<Vehiculo> Vehiculo {get;set;}
 
-    protected override void OnConfiguring (DbContextOptionsBuilder optionsBuilder)    
+    protected override void OnConfiguring (DbContextOptionsBuilder optionsBuilder)
     {
         if (!optionsBuilder.IsConfigured)
          {
-            
+
          optionsBuilder.UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = AccidentesTransito");
          }
     }
     }
-   
+
 }

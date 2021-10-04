@@ -9,11 +9,14 @@ namespace AcciTransito.App.Consola
     {
 
         private static IRepositorioPersonas _repoPersona = new RepositorioPersona(new Persistencia.AppContext());
+        private static IRepositorioVehiculo _repoVehiculo = new RepositorioVehiculo(new Persistencia.AppContext());
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-           // AddPersonas();
-           BuscarPersona(3);
+           ///AddPersonas();
+           AddVehiculo();
+
+
         }
         private static void AddPersonas()
         {
@@ -69,10 +72,39 @@ namespace AcciTransito.App.Consola
               _repoPersona.AddPersonas(personas3);
         }
 
-        private static void BuscarPersona(int id)
+
+        private static void AddVehiculo()
         {
-            var Persona = _repoPersona.GetPersonas(id);
-            Console.WriteLine(Persona.Nombre+""+Persona.Apellidos);
+            var vehiculo = new Vehiculo{
+
+                Placa="AAB-103",
+                Marca = "MAZDA",
+                Modelo="2001",
+                TipoVehiculo= "Automovil",
+                LicenciaTransito="AS200",
+
+
+
+            };
+              var vehiculo1 = new Vehiculo{
+
+                Placa="BAC-B103",
+                Marca = "RENAULT",
+                Modelo="2016",
+                TipoVehiculo= "Automovil",
+                LicenciaTransito="AS201",
+
+
+            };
+
+            _repoVehiculo.AddVehiculo(vehiculo);
+            _repoVehiculo.AddVehiculo(vehiculo1);
+
+
         }
+
+
     }
 }
+
+

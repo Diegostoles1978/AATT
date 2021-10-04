@@ -7,3 +7,13 @@ C:\AccidentesTransito\AcciTransito.App\AcciTransito.App.Dominio\obj\Debug\netsta
 C:\AccidentesTransito\AcciTransito.App\AcciTransito.App.Dominio\obj\Debug\netstandard2.0\AcciTransito.App.Dominio.csproj.CoreCompileInputs.cache
 C:\AccidentesTransito\AcciTransito.App\AcciTransito.App.Dominio\obj\Debug\netstandard2.0\AcciTransito.App.Dominio.dll
 C:\AccidentesTransito\AcciTransito.App\AcciTransito.App.Dominio\obj\Debug\netstandard2.0\AcciTransito.App.Dominio.pdb
+C:\AccidentesTransitoVersion1.0\AccidentesTransitoVersion1.0\AppAccidentesdeTransito\AcciTransito.App\AcciTransito.App.Dominio\bin\Debug\netstandard2.0\AcciTransito.App.Dominio.deps.json
+C:\AccidentesTransitoVersion1.0\AccidentesTransitoVersion1.0\AppAccidentesdeTransito\AcciTransito.App\AcciTransito.App.Dominio\bin\Debug\netstandard2.0\AcciTransito.App.Dominio.dll
+C:\AccidentesTransitoVersion1.0\AccidentesTransitoVersion1.0\AppAccidentesdeTransito\AcciTransito.App\AcciTransito.App.Dominio\bin\Debug\netstandard2.0\AcciTransito.App.Dominio.pdb
+C:\AccidentesTransitoVersion1.0\AccidentesTransitoVersion1.0\AppAccidentesdeTransito\AcciTransito.App\AcciTransito.App.Dominio\obj\Debug\netstandard2.0\AcciTransito.App.Dominio.csproj.AssemblyReference.cache
+C:\AccidentesTransitoVersion1.0\AccidentesTransitoVersion1.0\AppAccidentesdeTransito\AcciTransito.App\AcciTransito.App.Dominio\obj\Debug\netstandard2.0\AcciTransito.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\AccidentesTransitoVersion1.0\AccidentesTransitoVersion1.0\AppAccidentesdeTransito\AcciTransito.App\AcciTransito.App.Dominio\obj\Debug\netstandard2.0\AcciTransito.App.Dominio.AssemblyInfoInputs.cache
+C:\AccidentesTransitoVersion1.0\AccidentesTransitoVersion1.0\AppAccidentesdeTransito\AcciTransito.App\AcciTransito.App.Dominio\obj\Debug\netstandard2.0\AcciTransito.App.Dominio.AssemblyInfo.cs
+C:\AccidentesTransitoVersion1.0\AccidentesTransitoVersion1.0\AppAccidentesdeTransito\AcciTransito.App\AcciTransito.App.Dominio\obj\Debug\netstandard2.0\AcciTransito.App.Dominio.csproj.CoreCompileInputs.cache
+C:\AccidentesTransitoVersion1.0\AccidentesTransitoVersion1.0\AppAccidentesdeTransito\AcciTransito.App\AcciTransito.App.Dominio\obj\Debug\netstandard2.0\AcciTransito.App.Dominio.dll
+C:\AccidentesTransitoVersion1.0\AccidentesTransitoVersion1.0\AppAccidentesdeTransito\AcciTransito.App\AcciTransito.App.Dominio\obj\Debug\netstandard2.0\AcciTransito.App.Dominio.pdb
