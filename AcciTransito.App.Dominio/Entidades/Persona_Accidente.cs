@@ -7,7 +7,6 @@ namespace AcciTransito.App.Dominio.Entidades
       public class Personas
     {
      public int  id  {get;set;}
-     public int  Cedula  {get;set;}
      public String NumeroAccidente {get;set;}
 
 
