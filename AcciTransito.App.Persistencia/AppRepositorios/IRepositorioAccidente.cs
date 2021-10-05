@@ -13,6 +13,6 @@ namespace AcciTransito.App.Persistencia.AppRepositorios
     void DeleteAccidente(int id);
 
         Personas GetAccidente(int id);
-
+        //Cristian Estuvo aqui
     }
 }
