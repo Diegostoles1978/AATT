@@ -13,8 +13,8 @@ namespace AcciTransito.App.Consola
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-           ///AddPersonas();
-           AddVehiculo();
+           AddPersonas();
+           AddVehiculos();
 
 
         }
@@ -73,9 +73,9 @@ namespace AcciTransito.App.Consola
         }
 
 
-        private static void AddVehiculo()
+        private static void AddVehiculos()
         {
-            var vehiculo = new Vehiculo{
+            var vehiculo = new Vehiculos{
 
                 Placa="AAB-103",
                 Marca = "MAZDA",
@@ -86,7 +86,7 @@ namespace AcciTransito.App.Consola
 
 
             };
-              var vehiculo1 = new Vehiculo{
+              var vehiculo1 = new Vehiculos{
 
                 Placa="BAC-B103",
                 Marca = "RENAULT",
@@ -97,8 +97,8 @@ namespace AcciTransito.App.Consola
 
             };
 
-            _repoVehiculo.AddVehiculo(vehiculo);
-            _repoVehiculo.AddVehiculo(vehiculo1);
+            _repoVehiculo.AddVehiculos(vehiculo);
+            _repoVehiculo.AddVehiculos(vehiculo1);
 
 
         }
