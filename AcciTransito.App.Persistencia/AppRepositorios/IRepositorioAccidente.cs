@@ -3,16 +3,15 @@ using System;
 using System.Diagnostics;
 using AcciTransito.App.Dominio.Entidades;
 
-namespace AcciTransito.App.Persistencia.AppRepositorios
+namespace AcciTransito.App.Persistencia
 {
-    public interface IRepositorioAccidente
-    {
-       IEnumerable<Accidente> GetAllAccidente();
-       Personas AddAccidente(Accidente accidente);
-       Personas UpdateAccidente(Accidente accidente);
-       void DeleteAccidente(int id);
-
-        Personas GetAccidente(int id);
-
+    public interface IRepositorioAccidente {
+        Accidente AddAccidente(Accidente accidente);
+        void DeleteAccidente(int id);
+        Accidente GetAccidente(int id);
+        IEnumerable<Accidente> GetAllAccidente();
+        Accidente UpdateAccidente(Accidente accidente);
     }
+
+
 }
