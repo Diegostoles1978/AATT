@@ -10,12 +10,12 @@ namespace AcciTransito.App.Persistencia
     public interface IRepositorioVehiculo
     {
 
-       IEnumerable<Vehiculo> GetAllVehiculo();
-       Vehiculo AddVehiculo(Vehiculo vehiculo);
-       Vehiculo UpdateVehiculo(Vehiculo vehiculo);
-       void DeleteVehiculo(int id);
+       IEnumerable<Vehiculos> GetAllVehiculos();
+       Vehiculos AddVehiculos(Vehiculos vehiculo);
+       Vehiculos UpdateVehiculos(Vehiculos vehiculo);
+       void DeleteVehiculos(int id);
 
-        Vehiculo GetVehiculo(int id);
+        Vehiculos GetVehiculos(int id);
     }
 
 

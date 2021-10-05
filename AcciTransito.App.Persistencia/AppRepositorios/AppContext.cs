@@ -6,15 +6,15 @@ namespace AcciTransito.App.Persistencia
 {
     public class AppContext : DbContext
     {
-        public DbSet<Accidente> Accidente {get;set;}
+        public DbSet<Accidentes> Accidentes {get;set;}
         public DbSet<AgenteTransito> AgenteTransito {get;set;}
         public DbSet<Personas> Personas {get;set;}
 
-        public DbSet<Persona_Accidente> Personas_Accidente {get;set;}
+        public DbSet<Personas_Accidente> Personas_Accidente {get;set;}
         public DbSet<Genero> Genero {get;set;}
         public DbSet<Coordenadas> Coordenadas {get;set;}
-        public DbSet<Vehiculo> Vehiculo {get;set;}
-        public DbSet<Vehiculo_Accidente> Vehiculo_Accidente {get;set;}
+        public DbSet<Vehiculos> Vehiculos {get;set;}
+        public DbSet<Vehiculos_Accidente> Vehiculos_Accidente {get;set;}
 
     protected override void OnConfiguring (DbContextOptionsBuilder optionsBuilder)
     {

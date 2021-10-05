@@ -6,11 +6,11 @@ using AcciTransito.App.Dominio.Entidades;
 namespace AcciTransito.App.Persistencia
 {
     public interface IRepositorioAccidente {
-        Accidente AddAccidente(Accidente accidente);
+        Accidentes AddAccidente(Accidentes accidente);
         void DeleteAccidente(int id);
-        Accidente GetAccidente(int id);
-        IEnumerable<Accidente> GetAllAccidente();
-        Accidente UpdateAccidente(Accidente accidente);
+        Accidentes GetAccidente(int id);
+        IEnumerable<Accidentes> GetAllAccidente();
+        Accidentes UpdateAccidente(Accidentes accidente);
     }
 
 

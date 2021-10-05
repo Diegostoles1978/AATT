@@ -146,9 +146,6 @@ namespace AcciTransito.App.Persistencia.Migrations
                     b.Property<string>("Apellidos")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Cedula")
-                        .HasColumnType("int");
-
                     b.Property<string>("CorreoElectronico")
                         .HasColumnType("nvarchar(max)");
 
@@ -166,6 +163,9 @@ namespace AcciTransito.App.Persistencia.Migrations
 
                     b.Property<int>("NumeroCelular")
                         .HasColumnType("int");
+
+                    b.Property<string>("NumeroIdentificacion")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("id");
 

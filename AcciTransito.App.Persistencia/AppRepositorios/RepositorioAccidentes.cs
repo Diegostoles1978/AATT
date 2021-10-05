@@ -18,30 +18,30 @@ namespace AcciTransito.App.Persistencia
         ///<param name="appContext"></param>//
 
         public RepositorioAccidentes(AppContext appContext) => _appContext = appContext;
-        public Accidente AddAccidente(Accidente accidente) {
-            var accidenteAdicionar=_appContext.Accidente.Add(accidente);
+        public Accidentes AddAccidente(Accidentes accidente) {
+            var accidenteAdicionar=_appContext.Accidentes.Add(accidente);
             _appContext.SaveChanges();
             return accidenteAdicionar.Entity;
 
         }
 
         void IRepositorioAccidente.DeleteAccidente(int id) {
-            var accidenteEncontrado=_appContext.Accidente.FirstOrDefault(p => p.id==id);
+            var accidenteEncontrado=_appContext.Accidentes.FirstOrDefault(p => p.id==id);
             if(accidenteEncontrado==null)
             return;
-            _appContext.Accidente.Remove(accidenteEncontrado);
+            _appContext.Accidentes.Remove(accidenteEncontrado);
             _appContext.SaveChanges();
         }
-        public IEnumerable<Accidente> GetAllAccidente() {
-          return _appContext.Accidente;
+        public IEnumerable<Accidentes> GetAllAccidente() {
+          return _appContext.Accidentes;
         }
 
-        public Accidente GetAccidente(int id) {
-          return _appContext.Accidente.FirstOrDefault (p => p.id==id);
+        public Accidentes GetAccidente(int id) {
+          return _appContext.Accidentes.FirstOrDefault (p => p.id==id);
         }
 
-        public Accidente UpdateAccidente(Accidente accidente) {
-            var accidenteEncontrado= _appContext.Accidente.FirstOrDefault(p => p.id==accidente.id);
+        public Accidentes UpdateAccidente(Accidentes accidente) {
+            var accidenteEncontrado= _appContext.Accidentes.FirstOrDefault(p => p.id==accidente.id);
             if (accidenteEncontrado!=null)
             {
                 accidenteEncontrado.NumeroAccidente=accidente.NumeroAccidente;

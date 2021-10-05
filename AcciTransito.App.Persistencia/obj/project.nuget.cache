@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uYJysASYeOKDwgcYuTTdVCXGoCK7gW+s0LcGRFlucouyh9cpu5F12tKi4GQxUMFzRo7XA5TwSco/VZB6GqwQzw==",
+  "dgSpecHash": "CDcUo+WvoNdTI2P3/VrWhwWA7HKXC9OyZtvjmXA39hL8OS9puMOqC5V3HB5n2kct14Yfd9FKhuvq6JtjlhjbpA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Persistencia\\AcciTransito.App.Persistencia.csproj",
+  "projectFilePath": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTRansito.App.Persistencia\\AcciTransito.App.Persistencia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mileniso\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\mileniso\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

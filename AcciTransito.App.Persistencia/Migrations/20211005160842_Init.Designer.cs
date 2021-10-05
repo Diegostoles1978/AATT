@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AcciTransito.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20211001154742_Inicial2")]
-    partial class Inicial2
+    [Migration("20211005160842_Init")]
+    partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -116,6 +116,28 @@ namespace AcciTransito.App.Persistencia.Migrations
                     b.ToTable("Genero");
                 });
 
+            modelBuilder.Entity("AcciTransito.App.Dominio.Entidades.Persona_Accidente", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<int?>("id_accidenteid")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("id_personaid")
+                        .HasColumnType("int");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("id_accidenteid");
+
+                    b.HasIndex("id_personaid");
+
+                    b.ToTable("Personas_Accidente");
+                });
+
             modelBuilder.Entity("AcciTransito.App.Dominio.Entidades.Personas", b =>
                 {
                     b.Property<int>("id")
@@ -125,9 +147,6 @@ namespace AcciTransito.App.Persistencia.Migrations
 
                     b.Property<string>("Apellidos")
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Cedula")
-                        .HasColumnType("int");
 
                     b.Property<string>("CorreoElectronico")
                         .HasColumnType("nvarchar(max)");
@@ -146,6 +165,9 @@ namespace AcciTransito.App.Persistencia.Migrations
 
                     b.Property<int>("NumeroCelular")
                         .HasColumnType("int");
+
+                    b.Property<string>("NumeroIdentificacion")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("id");
 
@@ -186,6 +208,28 @@ namespace AcciTransito.App.Persistencia.Migrations
                     b.ToTable("Vehiculo");
                 });
 
+            modelBuilder.Entity("AcciTransito.App.Dominio.Entidades.Vehiculo_Accidente", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<int?>("id_Accidenteid")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("id_vehiculoid")
+                        .HasColumnType("int");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("id_Accidenteid");
+
+                    b.HasIndex("id_vehiculoid");
+
+                    b.ToTable("Vehiculo_Accidente");
+                });
+
             modelBuilder.Entity("AcciTransito.App.Dominio.Entidades.Accidente", b =>
                 {
                     b.HasOne("AcciTransito.App.Dominio.Entidades.AgenteTransito", "AgenteTransito")
@@ -213,6 +257,21 @@ namespace AcciTransito.App.Persistencia.Migrations
                     b.Navigation("Vehiculos");
                 });
 
+            modelBuilder.Entity("AcciTransito.App.Dominio.Entidades.Persona_Accidente", b =>
+                {
+                    b.HasOne("AcciTransito.App.Dominio.Entidades.Accidente", "id_accidente")
+                        .WithMany()
+                        .HasForeignKey("id_accidenteid");
+
+                    b.HasOne("AcciTransito.App.Dominio.Entidades.Personas", "id_persona")
+                        .WithMany()
+                        .HasForeignKey("id_personaid");
+
+                    b.Navigation("id_accidente");
+
+                    b.Navigation("id_persona");
+                });
+
             modelBuilder.Entity("AcciTransito.App.Dominio.Entidades.Personas", b =>
                 {
                     b.HasOne("AcciTransito.App.Dominio.Entidades.Genero", "Genero")
@@ -229,6 +288,21 @@ namespace AcciTransito.App.Persistencia.Migrations
                         .HasForeignKey("Personaid");
 
                     b.Navigation("Persona");
+                });
+
+            modelBuilder.Entity("AcciTransito.App.Dominio.Entidades.Vehiculo_Accidente", b =>
+                {
+                    b.HasOne("AcciTransito.App.Dominio.Entidades.Accidente", "id_Accidente")
+                        .WithMany()
+                        .HasForeignKey("id_Accidenteid");
+
+                    b.HasOne("AcciTransito.App.Dominio.Entidades.Vehiculo", "id_vehiculo")
+                        .WithMany()
+                        .HasForeignKey("id_vehiculoid");
+
+                    b.Navigation("id_Accidente");
+
+                    b.Navigation("id_vehiculo");
                 });
 #pragma warning restore 612, 618
         }

@@ -22,7 +22,7 @@ namespace AcciTransito.App.Consola
         {
             var personas = new Personas{
 
-                Cedula=10034568,
+                NumeroIdentificacion="53892870",
                 Nombre = "Ana Maria",
                 Apellidos="Amado",
                 FechaNacimiento= new DateTime(2002, 10,01),
@@ -33,7 +33,7 @@ namespace AcciTransito.App.Consola
             };
               var personas1 = new Personas{
 
-                Cedula=9023485,
+                NumeroIdentificacion="9023485",
                 Nombre = "Diego",
                 Apellidos="Villamizar",
                 FechaNacimiento= new DateTime(1980, 05,15),
@@ -44,7 +44,7 @@ namespace AcciTransito.App.Consola
             };
               var personas2 = new Personas{
 
-                Cedula=100236759,
+                NumeroIdentificacion="100236759",
                 Nombre = "Cristian",
                 Apellidos="Barraza",
                 FechaNacimiento= new DateTime(1999, 03,17),
@@ -57,7 +57,7 @@ namespace AcciTransito.App.Consola
 
               var personas3= new Personas{
 
-                Cedula=100236759,
+                NumeroIdentificacion="100236759",
                 Nombre = "Oscar ",
                 Apellidos="Habeych",
                 FechaNacimiento= new DateTime(1985, 11,12),
