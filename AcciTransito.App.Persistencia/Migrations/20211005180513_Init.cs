@@ -50,6 +50,35 @@ namespace AcciTransito.App.Persistencia.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Accidentes",
+                columns: table => new
+                {
+                    id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    NumeroAccidente = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Fecha = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Peritaje = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    IdCoordenadasid = table.Column<int>(type: "int", nullable: true),
+                    AgenteTransitoId = table.Column<int>(type: "int", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Accidentes", x => x.id);
+                    table.ForeignKey(
+                        name: "FK_Accidentes_AgenteTransito_AgenteTransitoId",
+                        column: x => x.AgenteTransitoId,
+                        principalTable: "AgenteTransito",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Accidentes_Coordenadas_IdCoordenadasid",
+                        column: x => x.IdCoordenadasid,
+                        principalTable: "Coordenadas",
+                        principalColumn: "id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Personas",
                 columns: table => new
                 {
@@ -76,7 +105,33 @@ namespace AcciTransito.App.Persistencia.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Vehiculo",
+                name: "Personas_Accidente",
+                columns: table => new
+                {
+                    id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    id_personaid = table.Column<int>(type: "int", nullable: true),
+                    id_accidenteid = table.Column<int>(type: "int", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Personas_Accidente", x => x.id);
+                    table.ForeignKey(
+                        name: "FK_Personas_Accidente_Accidentes_id_accidenteid",
+                        column: x => x.id_accidenteid,
+                        principalTable: "Accidentes",
+                        principalColumn: "id",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_Personas_Accidente_Personas_id_personaid",
+                        column: x => x.id_personaid,
+                        principalTable: "Personas",
+                        principalColumn: "id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Vehiculos",
                 columns: table => new
                 {
                     id = table.Column<int>(type: "int", nullable: false)
@@ -90,9 +145,9 @@ namespace AcciTransito.App.Persistencia.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Vehiculo", x => x.id);
+                    table.PrimaryKey("PK_Vehiculos", x => x.id);
                     table.ForeignKey(
-                        name: "FK_Vehiculo_Personas_Personaid",
+                        name: "FK_Vehiculos_Personas_Personaid",
                         column: x => x.Personaid,
                         principalTable: "Personas",
                         principalColumn: "id",
@@ -100,76 +155,7 @@ namespace AcciTransito.App.Persistencia.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Accidente",
-                columns: table => new
-                {
-                    id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    NumeroAccidente = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Fecha = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Peritaje = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    IdCoordenadasid = table.Column<int>(type: "int", nullable: true),
-                    Vehiculosid = table.Column<int>(type: "int", nullable: true),
-                    AgenteTransitoId = table.Column<int>(type: "int", nullable: true),
-                    Personaid = table.Column<int>(type: "int", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Accidente", x => x.id);
-                    table.ForeignKey(
-                        name: "FK_Accidente_AgenteTransito_AgenteTransitoId",
-                        column: x => x.AgenteTransitoId,
-                        principalTable: "AgenteTransito",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Accidente_Coordenadas_IdCoordenadasid",
-                        column: x => x.IdCoordenadasid,
-                        principalTable: "Coordenadas",
-                        principalColumn: "id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Accidente_Personas_Personaid",
-                        column: x => x.Personaid,
-                        principalTable: "Personas",
-                        principalColumn: "id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Accidente_Vehiculo_Vehiculosid",
-                        column: x => x.Vehiculosid,
-                        principalTable: "Vehiculo",
-                        principalColumn: "id",
-                        onDelete: ReferentialAction.Restrict);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Personas_Accidente",
-                columns: table => new
-                {
-                    id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    id_personaid = table.Column<int>(type: "int", nullable: true),
-                    id_accidenteid = table.Column<int>(type: "int", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Personas_Accidente", x => x.id);
-                    table.ForeignKey(
-                        name: "FK_Personas_Accidente_Accidente_id_accidenteid",
-                        column: x => x.id_accidenteid,
-                        principalTable: "Accidente",
-                        principalColumn: "id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Personas_Accidente_Personas_id_personaid",
-                        column: x => x.id_personaid,
-                        principalTable: "Personas",
-                        principalColumn: "id",
-                        onDelete: ReferentialAction.Restrict);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Vehiculo_Accidente",
+                name: "Vehiculos_Accidente",
                 columns: table => new
                 {
                     id = table.Column<int>(type: "int", nullable: false)
@@ -179,40 +165,30 @@ namespace AcciTransito.App.Persistencia.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Vehiculo_Accidente", x => x.id);
+                    table.PrimaryKey("PK_Vehiculos_Accidente", x => x.id);
                     table.ForeignKey(
-                        name: "FK_Vehiculo_Accidente_Accidente_id_Accidenteid",
+                        name: "FK_Vehiculos_Accidente_Accidentes_id_Accidenteid",
                         column: x => x.id_Accidenteid,
-                        principalTable: "Accidente",
+                        principalTable: "Accidentes",
                         principalColumn: "id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Vehiculo_Accidente_Vehiculo_id_vehiculoid",
+                        name: "FK_Vehiculos_Accidente_Vehiculos_id_vehiculoid",
                         column: x => x.id_vehiculoid,
-                        principalTable: "Vehiculo",
+                        principalTable: "Vehiculos",
                         principalColumn: "id",
                         onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Accidente_AgenteTransitoId",
-                table: "Accidente",
+                name: "IX_Accidentes_AgenteTransitoId",
+                table: "Accidentes",
                 column: "AgenteTransitoId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Accidente_IdCoordenadasid",
-                table: "Accidente",
+                name: "IX_Accidentes_IdCoordenadasid",
+                table: "Accidentes",
                 column: "IdCoordenadasid");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Accidente_Personaid",
-                table: "Accidente",
-                column: "Personaid");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Accidente_Vehiculosid",
-                table: "Accidente",
-                column: "Vehiculosid");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Personas_Generoid",
@@ -230,18 +206,18 @@ namespace AcciTransito.App.Persistencia.Migrations
                 column: "id_personaid");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Vehiculo_Personaid",
-                table: "Vehiculo",
+                name: "IX_Vehiculos_Personaid",
+                table: "Vehiculos",
                 column: "Personaid");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Vehiculo_Accidente_id_Accidenteid",
-                table: "Vehiculo_Accidente",
+                name: "IX_Vehiculos_Accidente_id_Accidenteid",
+                table: "Vehiculos_Accidente",
                 column: "id_Accidenteid");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Vehiculo_Accidente_id_vehiculoid",
-                table: "Vehiculo_Accidente",
+                name: "IX_Vehiculos_Accidente_id_vehiculoid",
+                table: "Vehiculos_Accidente",
                 column: "id_vehiculoid");
         }
 
@@ -251,19 +227,19 @@ namespace AcciTransito.App.Persistencia.Migrations
                 name: "Personas_Accidente");
 
             migrationBuilder.DropTable(
-                name: "Vehiculo_Accidente");
+                name: "Vehiculos_Accidente");
 
             migrationBuilder.DropTable(
-                name: "Accidente");
+                name: "Accidentes");
+
+            migrationBuilder.DropTable(
+                name: "Vehiculos");
 
             migrationBuilder.DropTable(
                 name: "AgenteTransito");
 
             migrationBuilder.DropTable(
                 name: "Coordenadas");
-
-            migrationBuilder.DropTable(
-                name: "Vehiculo");
 
             migrationBuilder.DropTable(
                 name: "Personas");

@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AcciTransito.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20211005160842_Init")]
+    [Migration("20211005180513_Init")]
     partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -21,7 +21,7 @@ namespace AcciTransito.App.Persistencia.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.0");
 
-            modelBuilder.Entity("AcciTransito.App.Dominio.Entidades.Accidente", b =>
+            modelBuilder.Entity("AcciTransito.App.Dominio.Entidades.Accidentes", b =>
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()
@@ -43,23 +43,13 @@ namespace AcciTransito.App.Persistencia.Migrations
                     b.Property<string>("Peritaje")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("Personaid")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("Vehiculosid")
-                        .HasColumnType("int");
-
                     b.HasKey("id");
 
                     b.HasIndex("AgenteTransitoId");
 
                     b.HasIndex("IdCoordenadasid");
 
-                    b.HasIndex("Personaid");
-
-                    b.HasIndex("Vehiculosid");
-
-                    b.ToTable("Accidente");
+                    b.ToTable("Accidentes");
                 });
 
             modelBuilder.Entity("AcciTransito.App.Dominio.Entidades.AgenteTransito", b =>
@@ -116,28 +106,6 @@ namespace AcciTransito.App.Persistencia.Migrations
                     b.ToTable("Genero");
                 });
 
-            modelBuilder.Entity("AcciTransito.App.Dominio.Entidades.Persona_Accidente", b =>
-                {
-                    b.Property<int>("id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
-
-                    b.Property<int?>("id_accidenteid")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("id_personaid")
-                        .HasColumnType("int");
-
-                    b.HasKey("id");
-
-                    b.HasIndex("id_accidenteid");
-
-                    b.HasIndex("id_personaid");
-
-                    b.ToTable("Personas_Accidente");
-                });
-
             modelBuilder.Entity("AcciTransito.App.Dominio.Entidades.Personas", b =>
                 {
                     b.Property<int>("id")
@@ -176,7 +144,29 @@ namespace AcciTransito.App.Persistencia.Migrations
                     b.ToTable("Personas");
                 });
 
-            modelBuilder.Entity("AcciTransito.App.Dominio.Entidades.Vehiculo", b =>
+            modelBuilder.Entity("AcciTransito.App.Dominio.Entidades.Personas_Accidente", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<int?>("id_accidenteid")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("id_personaid")
+                        .HasColumnType("int");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("id_accidenteid");
+
+                    b.HasIndex("id_personaid");
+
+                    b.ToTable("Personas_Accidente");
+                });
+
+            modelBuilder.Entity("AcciTransito.App.Dominio.Entidades.Vehiculos", b =>
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()
@@ -205,10 +195,10 @@ namespace AcciTransito.App.Persistencia.Migrations
 
                     b.HasIndex("Personaid");
 
-                    b.ToTable("Vehiculo");
+                    b.ToTable("Vehiculos");
                 });
 
-            modelBuilder.Entity("AcciTransito.App.Dominio.Entidades.Vehiculo_Accidente", b =>
+            modelBuilder.Entity("AcciTransito.App.Dominio.Entidades.Vehiculos_Accidente", b =>
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()
@@ -227,10 +217,10 @@ namespace AcciTransito.App.Persistencia.Migrations
 
                     b.HasIndex("id_vehiculoid");
 
-                    b.ToTable("Vehiculo_Accidente");
+                    b.ToTable("Vehiculos_Accidente");
                 });
 
-            modelBuilder.Entity("AcciTransito.App.Dominio.Entidades.Accidente", b =>
+            modelBuilder.Entity("AcciTransito.App.Dominio.Entidades.Accidentes", b =>
                 {
                     b.HasOne("AcciTransito.App.Dominio.Entidades.AgenteTransito", "AgenteTransito")
                         .WithMany()
@@ -240,26 +230,23 @@ namespace AcciTransito.App.Persistencia.Migrations
                         .WithMany()
                         .HasForeignKey("IdCoordenadasid");
 
-                    b.HasOne("AcciTransito.App.Dominio.Entidades.Personas", "Persona")
-                        .WithMany()
-                        .HasForeignKey("Personaid");
-
-                    b.HasOne("AcciTransito.App.Dominio.Entidades.Vehiculo", "Vehiculos")
-                        .WithMany()
-                        .HasForeignKey("Vehiculosid");
-
                     b.Navigation("AgenteTransito");
 
                     b.Navigation("IdCoordenadas");
-
-                    b.Navigation("Persona");
-
-                    b.Navigation("Vehiculos");
                 });
 
-            modelBuilder.Entity("AcciTransito.App.Dominio.Entidades.Persona_Accidente", b =>
+            modelBuilder.Entity("AcciTransito.App.Dominio.Entidades.Personas", b =>
                 {
-                    b.HasOne("AcciTransito.App.Dominio.Entidades.Accidente", "id_accidente")
+                    b.HasOne("AcciTransito.App.Dominio.Entidades.Genero", "Genero")
+                        .WithMany()
+                        .HasForeignKey("Generoid");
+
+                    b.Navigation("Genero");
+                });
+
+            modelBuilder.Entity("AcciTransito.App.Dominio.Entidades.Personas_Accidente", b =>
+                {
+                    b.HasOne("AcciTransito.App.Dominio.Entidades.Accidentes", "id_accidente")
                         .WithMany()
                         .HasForeignKey("id_accidenteid");
 
@@ -272,16 +259,7 @@ namespace AcciTransito.App.Persistencia.Migrations
                     b.Navigation("id_persona");
                 });
 
-            modelBuilder.Entity("AcciTransito.App.Dominio.Entidades.Personas", b =>
-                {
-                    b.HasOne("AcciTransito.App.Dominio.Entidades.Genero", "Genero")
-                        .WithMany()
-                        .HasForeignKey("Generoid");
-
-                    b.Navigation("Genero");
-                });
-
-            modelBuilder.Entity("AcciTransito.App.Dominio.Entidades.Vehiculo", b =>
+            modelBuilder.Entity("AcciTransito.App.Dominio.Entidades.Vehiculos", b =>
                 {
                     b.HasOne("AcciTransito.App.Dominio.Entidades.Personas", "Persona")
                         .WithMany()
@@ -290,13 +268,13 @@ namespace AcciTransito.App.Persistencia.Migrations
                     b.Navigation("Persona");
                 });
 
-            modelBuilder.Entity("AcciTransito.App.Dominio.Entidades.Vehiculo_Accidente", b =>
+            modelBuilder.Entity("AcciTransito.App.Dominio.Entidades.Vehiculos_Accidente", b =>
                 {
-                    b.HasOne("AcciTransito.App.Dominio.Entidades.Accidente", "id_Accidente")
+                    b.HasOne("AcciTransito.App.Dominio.Entidades.Accidentes", "id_Accidente")
                         .WithMany()
                         .HasForeignKey("id_Accidenteid");
 
-                    b.HasOne("AcciTransito.App.Dominio.Entidades.Vehiculo", "id_vehiculo")
+                    b.HasOne("AcciTransito.App.Dominio.Entidades.Vehiculos", "id_vehiculo")
                         .WithMany()
                         .HasForeignKey("id_vehiculoid");
 
