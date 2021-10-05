@@ -7,10 +7,10 @@ namespace AcciTransito.App.Persistencia.AppRepositorios
 {
     public interface IRepositorioAccidente
     {
-       IEnumerable<Accidente> GetAllAccidente();
-       Personas AddAccidente(Accidente accidente);
-       Personas UpdateAccidente(Accidente accidente);
-       void DeleteAccidente(int id);
+    IEnumerable<Accidente> GetAllAccidente();
+    Personas AddAccidente(Accidente accidente);
+    Personas UpdateAccidente(Accidente accidente);
+    void DeleteAccidente(int id);
 
         Personas GetAccidente(int id);
 
