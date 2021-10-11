@@ -21,44 +21,44 @@ namespace AcciTransito.App.Persistencia
         {
             _appContext=appContext;
         }
-        public Vehiculo AddVehiculo(Vehiculo vehiculo) {
-            var vehiculoAdicionar=_appContext.Vehiculo.Add(vehiculo);
+        public Vehiculos AddVehiculos(Vehiculos vehiculo) {
+            var vehiculoAdicionar=_appContext.Vehiculos.Add(vehiculo);
             _appContext.SaveChanges();
             return vehiculoAdicionar.Entity;
 
         }
 
-        void IRepositorioVehiculo.DeleteVehiculo(int id) {
-            var vehiculoEncontrada=_appContext.Vehiculo.FirstOrDefault(p => p.id==id);
-            if(vehiculoEncontrada==null)
+        void IRepositorioVehiculo.DeleteVehiculos(int id) {
+            var vehiculoEncontrado=_appContext.Vehiculos.FirstOrDefault(p => p.id==id);
+            if(vehiculoEncontrado==null)
             return;
-            _appContext.Vehiculo.Remove(vehiculoEncontrada);
+            _appContext.Vehiculos.Remove(vehiculoEncontrado);
             _appContext.SaveChanges();
         }
-        public IEnumerable<Vehiculo> GetAllVehiculo() {
-          return _appContext.Vehiculo;
+        public IEnumerable<Vehiculos> GetAllVehiculos() {
+          return _appContext.Vehiculos;
         }
 
-        public Vehiculo GetVehiculo(int id) {
-          return _appContext.Vehiculo.FirstOrDefault (p => p.id==id);
+        public Vehiculos GetVehiculos(int id) {
+          return _appContext.Vehiculos.FirstOrDefault (p => p.id==id);
         }
 
-        public Vehiculo UpdateVehiculo(Vehiculo vehiculo) {
-            var vehiculoEncontrada= _appContext.Vehiculo.FirstOrDefault(p => p.id==vehiculo.id);
-            if (vehiculoEncontrada!=null)
+        public Vehiculos UpdateVehiculos(Vehiculos vehiculo) {
+            var vehiculoEncontrado= _appContext.Vehiculos.FirstOrDefault(p => p.id==vehiculo.id);
+            if (vehiculoEncontrado!=null)
             {
-                vehiculoEncontrada.Placa=vehiculo.Placa;
-                vehiculoEncontrada.Marca=vehiculo.Marca;
-                vehiculoEncontrada.Modelo=vehiculo.Modelo;
-                vehiculoEncontrada.TipoVehiculo=vehiculo.TipoVehiculo;
-                vehiculoEncontrada.LicenciaTransito=vehiculo.LicenciaTransito;
+                vehiculoEncontrado.Placa=vehiculo.Placa;
+                vehiculoEncontrado.Marca=vehiculo.Marca;
+                vehiculoEncontrado.Modelo=vehiculo.Modelo;
+                vehiculoEncontrado.TipoVehiculo=vehiculo.TipoVehiculo;
+                vehiculoEncontrado.LicenciaTransito=vehiculo.LicenciaTransito;
 
 
                 _appContext.SaveChanges();
 
             }
 
-             return vehiculoEncontrada;
+             return vehiculoEncontrado;
         }
 
     }

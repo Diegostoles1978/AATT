@@ -48,7 +48,7 @@ namespace AcciTransito.App.Persistencia
             var personasEncontrada= _appContext.Personas.FirstOrDefault(p => p.id==personas.id);
             if (personasEncontrada!=null)
             {
-                personasEncontrada.Cedula=personas.Cedula;
+                personasEncontrada.NumeroIdentificacion=personas.NumeroIdentificacion;
                 personasEncontrada.Nombre=personas.Nombre;
                 personasEncontrada.Apellidos=personas.Apellidos;
                 personasEncontrada.FechaNacimiento=personas.FechaNacimiento;

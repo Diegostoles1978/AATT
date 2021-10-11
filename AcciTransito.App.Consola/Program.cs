@@ -13,8 +13,8 @@ namespace AcciTransito.App.Consola
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-           ///AddPersonas();
-           AddVehiculo();
+           AddPersonas();
+           AddVehiculos();
 
 
         }
@@ -22,7 +22,7 @@ namespace AcciTransito.App.Consola
         {
             var personas = new Personas{
 
-                Cedula=10034568,
+                NumeroIdentificacion="53892870",
                 Nombre = "Ana Maria",
                 Apellidos="Amado",
                 FechaNacimiento= new DateTime(2002, 10,01),
@@ -33,7 +33,7 @@ namespace AcciTransito.App.Consola
             };
               var personas1 = new Personas{
 
-                Cedula=9023485,
+                NumeroIdentificacion="9023485",
                 Nombre = "Diego",
                 Apellidos="Villamizar",
                 FechaNacimiento= new DateTime(1980, 05,15),
@@ -44,7 +44,7 @@ namespace AcciTransito.App.Consola
             };
               var personas2 = new Personas{
 
-                Cedula=100236759,
+                NumeroIdentificacion="100236759",
                 Nombre = "Cristian",
                 Apellidos="Barraza",
                 FechaNacimiento= new DateTime(1999, 03,17),
@@ -57,7 +57,7 @@ namespace AcciTransito.App.Consola
 
               var personas3= new Personas{
 
-                Cedula=100236759,
+                NumeroIdentificacion="100236759",
                 Nombre = "Oscar ",
                 Apellidos="Habeych",
                 FechaNacimiento= new DateTime(1985, 11,12),
@@ -73,9 +73,9 @@ namespace AcciTransito.App.Consola
         }
 
 
-        private static void AddVehiculo()
+        private static void AddVehiculos()
         {
-            var vehiculo = new Vehiculo{
+            var vehiculo = new Vehiculos{
 
                 Placa="AAB-103",
                 Marca = "MAZDA",
@@ -86,7 +86,7 @@ namespace AcciTransito.App.Consola
 
 
             };
-              var vehiculo1 = new Vehiculo{
+              var vehiculo1 = new Vehiculos{
 
                 Placa="BAC-B103",
                 Marca = "RENAULT",
@@ -97,8 +97,8 @@ namespace AcciTransito.App.Consola
 
             };
 
-            _repoVehiculo.AddVehiculo(vehiculo);
-            _repoVehiculo.AddVehiculo(vehiculo1);
+            _repoVehiculo.AddVehiculos(vehiculo);
+            _repoVehiculo.AddVehiculos(vehiculo1);
 
 
         }

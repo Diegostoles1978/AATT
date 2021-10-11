@@ -7,7 +7,7 @@ namespace AcciTransito.App.Dominio.Entidades
       public class Personas
     {
      public int  id  {get;set;}
-     public int  Cedula  {get;set;}
+     public String NumeroIdentificacion  {get;set;}
      public String Nombre  {get;set;}
      public String Apellidos  {get;set;}
      public DateTime FechaNacimiento {get;set;}
