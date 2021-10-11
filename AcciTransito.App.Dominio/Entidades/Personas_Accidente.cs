@@ -9,8 +9,7 @@ namespace AcciTransito.App.Dominio.Entidades
     {
 
       public int id {get;set;}
-
-     public Personas  id_persona{get;set;}
+      public Personas  id_persona{get;set;}
       public Accidentes id_accidente {get;set;}
 
       }

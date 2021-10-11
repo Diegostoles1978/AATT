@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <ItemGroup>
+
+    <ProjectReference Include="..\AcciTransito.App.Persistencia\AcciTransito.App.Persistencia.csproj" />
+    <ProjectReference Include="..\AcciTransito.App.Dominio\AcciTransito.App.Dominio.csproj" />
+
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+</Project>

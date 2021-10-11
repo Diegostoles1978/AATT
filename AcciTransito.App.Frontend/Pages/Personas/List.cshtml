@@ -1,0 +1,45 @@
+@page
+@model AcciTransito.App.Frontend.Pages.ListModel
+@{
+}
+
+<h2>Personas</h2>
+<table  class="table">
+    @foreach (var perso in Model.personas)
+    {
+
+
+        <tr>
+<tr>
+            <th scope="row">Nombres</th>
+            <th scope="row">Apellidos</th>
+            <th scope="row">Dirección</th>  </tr>
+
+            <td > @perso.Nombres</td>
+
+
+            <td > @perso.Apellidos</td>
+
+
+            <td > @perso.Direccion</td>
+
+        </tr>
+
+   }
+
+</table>
+
+
+
+
+<div class="d-grid gap- d-md-flex justify-content-md-end relative fullwidth col-xs-15end">
+ <button type="submit" id="actualizar" name="submit" class="form-btn-submit semibold" style="color:teal; background-color:white; height:50px; width:100px; font-size:16px;" >Actualizar</button>
+ <button type="submit" id="eliminar" name="submit" class="form-btn-submit semibold" style="color:teal;background-color:white;  height:50px; width:100px; font-size:16px;">Eliminar</button>
+ <button type="submit" id="eliminar" name="submit" class="form-btn-submit semibold" style="color:teal; background-color:white; height:50px; width:100px; font-size:16px;">Guardar</button>
+  </div>
+     <div class="clear"></div>
+
+
+
+
+
