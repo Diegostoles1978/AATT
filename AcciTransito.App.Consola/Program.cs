@@ -14,7 +14,7 @@ namespace AcciTransito.App.Consola
         {
             Console.WriteLine("Hello World!");
            ///AddPersonas();
-           AddVehiculo();
+           ///AddVehiculo();
 
 
         }
