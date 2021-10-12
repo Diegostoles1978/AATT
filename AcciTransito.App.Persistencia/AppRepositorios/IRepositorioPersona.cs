@@ -11,11 +11,11 @@ namespace AcciTransito.App.Persistencia
     {
 
          IEnumerable<Personas> GetAll();
-       // Personas AddPersonas(Personas personas);
-     //  Personas UpdatePersonas(Personas personas);
-      // void DeletePersonas(int id);
+       Personas AddPersonas(Personas personas);
+       Personas UpdatePersonas(Personas personas);
+      void DeletePersonas(int id);
 
-     //   Personas GetPersonas(int id);
+       Personas GetPersonas(int id);
 
 
     }

@@ -9,9 +9,7 @@ namespace AcciTransito.App.Persistencia
         public DbSet<Accidentes> Accidentes {get;set;}
         public DbSet<AgenteTransito> AgenteTransito {get;set;}
         public DbSet<Personas> Personas {get;set;}
-
         public DbSet<Personas_Accidente> Personas_Accidente {get;set;}
-        public DbSet<Genero> Genero {get;set;}
         public DbSet<Coordenadas> Coordenadas {get;set;}
         public DbSet<Vehiculos> Vehiculos {get;set;}
         public DbSet<Vehiculos_Accidente> Vehiculos_Accidente {get;set;}
@@ -21,7 +19,7 @@ namespace AcciTransito.App.Persistencia
         if (!optionsBuilder.IsConfigured)
          {
 
-         optionsBuilder.UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = AccidentesTransito");
+         optionsBuilder.UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = Accidentes_Transito");
          }
     }
     }

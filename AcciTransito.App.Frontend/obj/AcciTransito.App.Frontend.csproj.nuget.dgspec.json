@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Frontend\\AcciTransito.App.Frontend.csproj": {}
+    "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.frontend\\AcciTransito.App.Frontend.csproj": {}
   },
   "projects": {
     "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Dominio\\AcciTransito.App.Dominio.csproj": {
@@ -57,14 +57,14 @@
         }
       }
     },
-    "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Frontend\\AcciTransito.App.Frontend.csproj": {
+    "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.frontend\\AcciTransito.App.Frontend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Frontend\\AcciTransito.App.Frontend.csproj",
+        "projectUniqueName": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.frontend\\AcciTransito.App.Frontend.csproj",
         "projectName": "AcciTransito.App.Frontend",
-        "projectPath": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Frontend\\AcciTransito.App.Frontend.csproj",
+        "projectPath": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.frontend\\AcciTransito.App.Frontend.csproj",
         "packagesPath": "C:\\Users\\mileniso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Frontend\\obj\\",
+        "outputPath": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.frontend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mileniso\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -65,7 +65,6 @@ C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Frontend\obj\Debug\netc
 C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Frontend\obj\Debug\netcoreapp3.1\AcciTransito.App.Frontend.RazorCoreGenerate.cache
 C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
 C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
-C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\List.cshtml.g.cs
 C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
 C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
 C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -80,3 +79,4 @@ C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Frontend\obj\Debug\netc
 C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Frontend\obj\Debug\netcoreapp3.1\AcciTransito.App.Frontend.dll
 C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Frontend\obj\Debug\netcoreapp3.1\AcciTransito.App.Frontend.pdb
 C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Frontend\obj\Debug\netcoreapp3.1\AcciTransito.App.Frontend.genruntimeconfig.cache
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\ListaPersonas.cshtml.g.cs

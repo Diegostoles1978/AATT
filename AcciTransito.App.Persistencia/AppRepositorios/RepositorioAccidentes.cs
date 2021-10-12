@@ -46,8 +46,12 @@ namespace AcciTransito.App.Persistencia
             {
                 accidenteEncontrado.NumeroAccidente=accidente.NumeroAccidente;
                 accidenteEncontrado.Fecha=accidente.Fecha;
+                accidenteEncontrado.TipoAccidente=accidente.TipoAccidente;
                 accidenteEncontrado.Peritaje=accidente.Peritaje;
-                accidenteEncontrado.IdCoordenadas=accidente.IdCoordenadas;
+                accidenteEncontrado.Direccion=accidente.Direccion;
+                accidenteEncontrado.Coordenadas=accidente.Coordenadas;
+                accidenteEncontrado.Barrio=accidente.Barrio;
+                accidenteEncontrado.AgenteTransito=accidente.AgenteTransito;
 
 
                 _appContext.SaveChanges();

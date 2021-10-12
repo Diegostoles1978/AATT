@@ -14,63 +14,68 @@ namespace AcciTransito.App.Consola
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
            AddPersonas();
            AddVehiculos();
            AddAccidentes();
 
 
         }
+
         private static void AddPersonas()
         {
+
             var personas = new Personas{
 
-                NumeroIdentificacion="53892870",
+
                 Nombres = "Ana Maria",
                 Apellidos="Amado",
+                TipoDocumento=TipoDocumento.CC,
+                NumeroIdentificacion="53892870",
                 FechaNacimiento= new DateTime(2002, 10,01),
                 Direccion="Calle 116 No. 9-23",
-               // NumeroCelular= 3103467813 ,
+                Ciudad="Bogota",
+                NumeroCelular=3102914465,
+                ContactoAlterno=3103467813,
                 CorreoElectronico="ana.amado@gmail.com",
+                Genero=Genero.Femenino
 
             };
               var personas1 = new Personas{
-
-                NumeroIdentificacion="9023485",
                 Nombres = "Diego",
                 Apellidos="Villamizar",
+                TipoDocumento=TipoDocumento.CC,
+                NumeroIdentificacion="9023485",
+
                 FechaNacimiento= new DateTime(1980, 05,15),
                 Direccion="Calle 63 # 6.9",
-                //NumeroCelular= 3103467813 ,
+                Ciudad="Bogota",
+                NumeroCelular=3103467813,
+                ContactoAlterno=3103467813,
                 CorreoElectronico="diegoarlesvc@hotmail.com",
+                Genero=Genero.Masculino
 
             };
               var personas2 = new Personas{
 
-                NumeroIdentificacion="100236759",
+
                 Nombres = "Cristian",
                 Apellidos="Barraza",
+                TipoDocumento=TipoDocumento.TI,
+                NumeroIdentificacion="100236759",
                 FechaNacimiento= new DateTime(1999, 03,17),
                 Direccion="Calle 29 Norte No 3-02",
-               // NumeroCelular= 3103467813 ,
+                 Ciudad="Bogota",
+                NumeroCelular=3103467813,
+                ContactoAlterno=3103467813,
                 CorreoElectronico="cristian.barraza@gmail.com",
-
+                Genero=Genero.Masculino
             };
 
-
-              var personas3= new Personas{
-
-                NumeroIdentificacion="100236759",
-                Nombres = "Oscar ",
-                Apellidos="Habeych",
-                FechaNacimiento= new DateTime(1985, 11,12),
-                Direccion="Calle 122 No. 7-10",
-                CorreoElectronico="oscar.habeych@gmail.com",
-
-            };
             _repoPersona.AddPersonas(personas);
             _repoPersona.AddPersonas(personas1);
             _repoPersona.AddPersonas(personas2);
-            _repoPersona.AddPersonas(personas3);
+
         }
 
 
@@ -83,7 +88,16 @@ namespace AcciTransito.App.Consola
                 Modelo="2001",
                 TipoVehiculo= "Automovil",
                 LicenciaTransito="AS200",
-
+                Persona=new Personas{
+                TipoDocumento=TipoDocumento.TI,
+                NumeroIdentificacion="100236759",
+                Nombres = "Oscar ",
+                Apellidos="Habeych",
+                FechaNacimiento= new DateTime(1985, 11,12),
+                Direccion="Calle 122 No. 7-10",
+                Ciudad="Bogota",
+                CorreoElectronico="oscar.habeych@gmail.com",
+                Genero=Genero.Masculino}
 
 
             };
@@ -93,7 +107,9 @@ namespace AcciTransito.App.Consola
                 Marca = "RENAULT",
                 Modelo="2016",
                 TipoVehiculo= "Automovil",
-                LicenciaTransito="AS201",
+                LicenciaTransito="AS201"
+
+
             };
 
 
