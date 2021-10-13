@@ -1486,6 +1486,9 @@
       "AcciTransito.App.Dominio/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
         "compile": {
           "bin/placeholder/AcciTransito.App.Dominio.dll": {}
         },
@@ -5738,34 +5741,37 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mileniso\\.nuget\\packages\\": {}
+    "C:\\Users\\diego\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Frontend\\AcciTransito.App.Frontend.csproj",
+      "projectUniqueName": "C:\\AccidentesTransitoVersion1.0\\AccidentesTransitoVersion1.0\\AppAccidentesdeTransito\\AcciTransito.App\\AcciTransito.App.Frontend\\AcciTransito.App.Frontend.csproj",
       "projectName": "AcciTransito.App.Frontend",
-      "projectPath": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Frontend\\AcciTransito.App.Frontend.csproj",
-      "packagesPath": "C:\\Users\\mileniso\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Frontend\\obj\\",
+      "projectPath": "C:\\AccidentesTransitoVersion1.0\\AccidentesTransitoVersion1.0\\AppAccidentesdeTransito\\AcciTransito.App\\AcciTransito.App.Frontend\\AcciTransito.App.Frontend.csproj",
+      "packagesPath": "C:\\Users\\diego\\.nuget\\packages\\",
+      "outputPath": "C:\\AccidentesTransitoVersion1.0\\AccidentesTransitoVersion1.0\\AppAccidentesdeTransito\\AcciTransito.App\\AcciTransito.App.Frontend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mileniso\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Dominio\\AcciTransito.App.Dominio.csproj": {
-              "projectPath": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Dominio\\AcciTransito.App.Dominio.csproj"
+            "C:\\AccidentesTransitoVersion1.0\\AccidentesTransitoVersion1.0\\AppAccidentesdeTransito\\AcciTransito.App\\AcciTransito.App.Dominio\\AcciTransito.App.Dominio.csproj": {
+              "projectPath": "C:\\AccidentesTransitoVersion1.0\\AccidentesTransitoVersion1.0\\AppAccidentesdeTransito\\AcciTransito.App\\AcciTransito.App.Dominio\\AcciTransito.App.Dominio.csproj"
             },
-            "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Persistencia\\AcciTransito.App.Persistencia.csproj": {
-              "projectPath": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Persistencia\\AcciTransito.App.Persistencia.csproj"
+            "C:\\AccidentesTransitoVersion1.0\\AccidentesTransitoVersion1.0\\AppAccidentesdeTransito\\AcciTransito.App\\AcciTransito.App.Persistencia\\AcciTransito.App.Persistencia.csproj": {
+              "projectPath": "C:\\AccidentesTransitoVersion1.0\\AccidentesTransitoVersion1.0\\AppAccidentesdeTransito\\AcciTransito.App\\AcciTransito.App.Persistencia\\AcciTransito.App.Persistencia.csproj"
             }
           }
         }
@@ -5778,6 +5784,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -5796,7 +5803,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.413\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
