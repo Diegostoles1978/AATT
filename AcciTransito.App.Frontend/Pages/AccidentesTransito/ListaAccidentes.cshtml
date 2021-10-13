@@ -1,0 +1,26 @@
+@page
+@model AcciTransito.App.Frontend.Pages.ListModel
+@{
+}
+<body>
+<h2>ListadeAccidentes</h2>
+<table class="table table-bordered">
+
+    @foreach (var acci in Model.accidentes)
+    {
+
+        <tr>
+
+
+            <td> @acci.NumeroAccidente</td>
+            <td> @acci.TipoAccidente</td>
+            <td> <a class="btn btn-primary table-btn" asp-page="AccidentesTransito/ListaAccidentes" asp-route-accidenteid="@acci.id">
+                <i> class="fas fa-info-circle"</i>Detalle Accidente</a></td>
+       </tr>
+
+
+   }
+
+</table>
+
+</body>

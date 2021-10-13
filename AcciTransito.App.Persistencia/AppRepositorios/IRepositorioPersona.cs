@@ -10,12 +10,14 @@ namespace AcciTransito.App.Persistencia
     public interface IRepositorioPersonas
     {
 
-       IEnumerable<Personas> GetAllPersonas();
+         IEnumerable<Personas> GetAll();
        Personas AddPersonas(Personas personas);
        Personas UpdatePersonas(Personas personas);
-       void DeletePersonas(int id);
+      void DeletePersonas(int id);
 
-        Personas GetPersonas(int id);
+       Personas GetPersonas(int id);
+
+
     }
 
 
