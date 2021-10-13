@@ -4,7 +4,7 @@ namespace AcciTransito.App.Dominio.Entidades
 {
     public enum Genero
     {
-     Masculino, Femenino
+     Masculino, Femenino , Otro
 
     }
 }

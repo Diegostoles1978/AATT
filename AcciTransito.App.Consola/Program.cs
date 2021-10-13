@@ -61,7 +61,7 @@ namespace AcciTransito.App.Consola
 
                 Nombres = "Cristian",
                 Apellidos="Barraza",
-                TipoDocumento=TipoDocumento.TI,
+                TipoDocumento=TipoDocumento.CC,
                 NumeroIdentificacion="100236759",
                 FechaNacimiento= new DateTime(1999, 03,17),
                 Direccion="Calle 29 Norte No 3-02",
@@ -89,7 +89,7 @@ namespace AcciTransito.App.Consola
                 TipoVehiculo= "Automovil",
                 LicenciaTransito="AS200",
                 Persona=new Personas{
-                TipoDocumento=TipoDocumento.TI,
+                TipoDocumento=TipoDocumento.CC,
                 NumeroIdentificacion="100236759",
                 Nombres = "Oscar ",
                 Apellidos="Habeych",

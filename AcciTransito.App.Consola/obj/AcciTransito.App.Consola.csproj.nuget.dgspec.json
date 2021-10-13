@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Consola\\AcciTransito.App.Consola.csproj": {}
+    "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.consola\\AcciTransito.App.Consola.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Consola\\AcciTransito.App.Consola.csproj": {
+    "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.consola\\AcciTransito.App.Consola.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Consola\\AcciTransito.App.Consola.csproj",
+        "projectUniqueName": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.consola\\AcciTransito.App.Consola.csproj",
         "projectName": "AcciTransito.App.Consola",
-        "projectPath": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Consola\\AcciTransito.App.Consola.csproj",
+        "projectPath": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.consola\\AcciTransito.App.Consola.csproj",
         "packagesPath": "C:\\Users\\mileniso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Consola\\obj\\",
+        "outputPath": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.consola\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mileniso\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -106,6 +106,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [

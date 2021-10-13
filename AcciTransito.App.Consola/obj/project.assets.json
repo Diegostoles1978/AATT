@@ -1512,6 +1512,9 @@
       "AcciTransito.App.Dominio/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
         "compile": {
           "bin/placeholder/AcciTransito.App.Dominio.dll": {}
         },
@@ -5802,11 +5805,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Consola\\AcciTransito.App.Consola.csproj",
+      "projectUniqueName": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.consola\\AcciTransito.App.Consola.csproj",
       "projectName": "AcciTransito.App.Consola",
-      "projectPath": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Consola\\AcciTransito.App.Consola.csproj",
+      "projectPath": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.consola\\AcciTransito.App.Consola.csproj",
       "packagesPath": "C:\\Users\\mileniso\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Consola\\obj\\",
+      "outputPath": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.consola\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mileniso\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "rAEKe02Wz/ibUEysFbQe/dWjTMgumL6NEZqDygHN+fFHZ8MgtsNJwEM04dH3llts6vtsSA6vK29EMEcoYO1KRg==",
+  "dgSpecHash": "yNJa9iFn2LGaG2xOCTJzS/tAcXJ7AqY82zIL68UHv1kUi2ErDwbT7E1NQ6yYz0rJ/gaaW4kQRgIGrwPhLW1XdQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Dominio\\AcciTransito.App.Dominio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mileniso\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\mileniso\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\mileniso\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\mileniso\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

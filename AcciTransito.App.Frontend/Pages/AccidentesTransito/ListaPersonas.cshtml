@@ -2,17 +2,24 @@
 @model AcciTransito.App.Frontend.Pages.ListModel1
 @{
 }
-<body>
+
 <h2>Personas</h2>
 <table class="table table-bordered">
+     <tr>
+
 <caption>Información Personas</caption>
+
+ <th scope="col" > Numero Documento</td>
+ <th scope="col" > Nombres</td>
+ <th scope="col" > Apellidos</td>
+ <th scope="col" > Genero</td>
+<tbody>
     @foreach (var perso in Model.personas)
     {
 
 
         <tr>
 
-            <td > @perso.TipoDocumento</td>
             <td > @perso.NumeroIdentificacion</td>
             <td > @perso.Nombres</td>
             <td > @perso.Apellidos</td>
@@ -28,18 +35,18 @@
 
 
    }
-
+</tbody>
 </table>
 
 
-<div class="d-grid gap- d-md-flex justify-content-md-end relative fullwidth col-xs-15end">
+@* <div class="d-grid gap- d-md-flex justify-content-md-end relative fullwidth col-xs-15end">
  <button type="submit" id="actualizar" name="submit" class="form-btn-submit semibold" style="color:teal; background-color:white; height:50px; width:100px; font-size:16px;" >Actualizar</button>
  <button type="submit" id="eliminar" name="submit" class="form-btn-submit semibold" style="color:teal;background-color:white;  height:50px; width:100px; font-size:16px;">Eliminar</button>
  <button type="submit" id="eliminar" name="submit" class="form-btn-submit semibold" style="color:teal; background-color:white; height:50px; width:100px; font-size:16px;">Guardar</button>
   </div>
      <div class="clear"></div>
 
-</body>
+</body> *@
 
 
 
