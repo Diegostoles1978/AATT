@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Frontend\\AcciTransito.App.Frontend.csproj": {}
+    "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.frontend\\AcciTransito.App.Frontend.csproj": {}
   },
   "projects": {
     "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Dominio\\AcciTransito.App.Dominio.csproj": {
@@ -61,14 +61,14 @@
         }
       }
     },
-    "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Frontend\\AcciTransito.App.Frontend.csproj": {
+    "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.frontend\\AcciTransito.App.Frontend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Frontend\\AcciTransito.App.Frontend.csproj",
+        "projectUniqueName": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.frontend\\AcciTransito.App.Frontend.csproj",
         "projectName": "AcciTransito.App.Frontend",
-        "projectPath": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Frontend\\AcciTransito.App.Frontend.csproj",
+        "projectPath": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.frontend\\AcciTransito.App.Frontend.csproj",
         "packagesPath": "C:\\Users\\mileniso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Frontend\\obj\\",
+        "outputPath": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.frontend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mileniso\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -99,6 +99,30 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

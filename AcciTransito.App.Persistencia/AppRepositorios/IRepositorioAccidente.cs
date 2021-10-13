@@ -5,18 +5,6 @@ using AcciTransito.App.Dominio.Entidades;
 
 namespace AcciTransito.App.Persistencia
 {
-<<<<<<< HEAD
-    public interface IRepositorioAccidente
-    {
-    IEnumerable<Accidente> GetAllAccidente();
-    Personas AddAccidente(Accidente accidente);
-    Personas UpdateAccidente(Accidente accidente);
-    void DeleteAccidente(int id);
-
-        Personas GetAccidente(int id);
-        //Cristian Estuvo aqui
-    }
-=======
     public interface IRepositorioAccidente {
         IEnumerable<Accidentes> GetAllAccidente();
         Accidentes AddAccidente(Accidentes accidente);
@@ -27,5 +15,4 @@ namespace AcciTransito.App.Persistencia
     }
 
 
->>>>>>> fc3f27482b23f672ce983abbb2f71bb23a5c4834
 }

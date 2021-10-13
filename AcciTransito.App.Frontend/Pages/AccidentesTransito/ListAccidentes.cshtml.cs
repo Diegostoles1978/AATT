@@ -16,7 +16,7 @@ namespace AcciTransito.App.Frontend.Pages
        private readonly IRepositorioAccidente repositorioaccidente;
        public   IEnumerable<Accidentes> accidentes {get;set;}
 
-       public ListModel(RepositorioAccidentes repositorioaccidente)
+       public ListModel(IRepositorioAccidente repositorioaccidente)
        {
             this.repositorioaccidente=repositorioaccidente;
        }

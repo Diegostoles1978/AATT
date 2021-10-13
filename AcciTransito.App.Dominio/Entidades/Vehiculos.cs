@@ -1,6 +1,6 @@
 using System;
 using System.Diagnostics;
-using System.ComponentModel.DataAnottations;
+using System.ComponentModel.DataAnnotations;
 
 namespace AcciTransito.App.Dominio.Entidades
 {
