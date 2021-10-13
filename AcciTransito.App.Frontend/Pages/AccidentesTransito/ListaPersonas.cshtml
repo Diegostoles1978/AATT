@@ -1,5 +1,5 @@
 @page
-@model AcciTransito.App.Frontend.Pages.ListModel
+@model AcciTransito.App.Frontend.Pages.ListModel1
 @{
 }
 <body>
@@ -17,6 +17,9 @@
             <td > @perso.Nombres</td>
             <td > @perso.Apellidos</td>
             <td > @perso.Genero</td>
+
+             <td> <a class="btn btn-primary table-btn" asp-page="AccidentesTransito/ListaPersonas" asp-route-id="@perso.id">
+             Detalle Persona</a></td>
 
 
 

@@ -25,8 +25,10 @@ namespace AcciTransito.App.Frontend
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<AcciTransito.App.Persistencia.AppContext>();
-            services.AddRazorPages();
+
             services.AddScoped<IRepositorioPersonas,RepositorioPersona>();
+            services.AddScoped<IRepositorioAccidente,RepositorioAccidentes>();
+             services.AddRazorPages();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

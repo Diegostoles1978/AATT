@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "i2twTdqWHBTV3YveDNEKMoE8r94sCi3O3sLQWOwxfmvkIkf4T6ZXEvFyBi5REwOtqlGrhSzpEI9gBkCd71SISA==",
+  "dgSpecHash": "0B+HQ0L5qtlCIKeg9ggjKi1waRygBos3Ox5Sr+6ZBduTrVu45qj1fnL68g3Ix8U/EMHN78qTudLek1JEJgp2dw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.frontend\\AcciTransito.App.Frontend.csproj",
+  "projectFilePath": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Frontend\\AcciTransito.App.Frontend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mileniso\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\mileniso\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
