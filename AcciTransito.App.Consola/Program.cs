@@ -14,14 +14,9 @@ namespace AcciTransito.App.Consola
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-<<<<<<< HEAD
-           ///AddPersonas();
-           ///AddVehiculo();
-=======
            AddPersonas();
            AddVehiculos();
            AddAccidentes();
->>>>>>> 332934a842f3b09b93fcbe26844582654c1a79b0
 
 
         }
