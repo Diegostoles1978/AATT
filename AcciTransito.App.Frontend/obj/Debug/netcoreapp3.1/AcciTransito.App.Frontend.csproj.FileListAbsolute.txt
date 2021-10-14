@@ -265,3 +265,5 @@ C:\AccidentesTransitoVersion1.0\AccidentesTransitoVersion1.0\AppAccidentesdeTran
 C:\AccidentesTransitoVersion1.0\AccidentesTransitoVersion1.0\AppAccidentesdeTransito\AcciTransito.App\AcciTransito.App.Frontend\obj\Debug\netcoreapp3.1\AcciTransito.App.Frontend.pdb
 C:\AccidentesTransitoVersion1.0\AccidentesTransitoVersion1.0\AppAccidentesdeTransito\AcciTransito.App\AcciTransito.App.Frontend\obj\Debug\netcoreapp3.1\AcciTransito.App.Frontend.genruntimeconfig.cache
 >>>>>>> 3b6a66ac1ab32b3ab744d9ec54db9e4d01c309d4
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTRansito.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\AccidentesTransito\DetallePersona.cshtml.g.cs
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTRansito.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\AccidentesTransito\EditarPersona.cshtml.g.cs

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "q8BMc+/Dcid0gaiFYjc3ypH1EfKa0OwQXwWDcsGPT2Pv+NcyYACea16hWM/5wKSK6boXJPiTW8feL8RdtNEBSQ==",
+  "dgSpecHash": "3lIklz9XihPNcV0vs4eKKN0YamX6fUwbpMDHmc21vz4PezLYGE77z4SD+FPSOMeyZGVgzUjd7rwSU5n+JZxhvw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.frontend\\AcciTransito.App.Frontend.csproj",
+  "projectFilePath": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTRansito.App.Frontend\\AcciTransito.App.Frontend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mileniso\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\mileniso\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.4\\microsoft.aspnetcore.authorization.3.1.4.nupkg.sha512",
@@ -171,12 +171,5 @@
     "C:\\Users\\mileniso\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\mileniso\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.frontend\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

@@ -3,15 +3,45 @@
 @{
 }
 
-<h2>Editar Accidente: @Model.accidentes.NumeroAccidente</h2>
+<h4>Editar Accidente: @Model.accidentes.NumeroAccidente</h4>
 <form method="post">
     <input type="hidden" asp-for="accidentes.id"/>
-
+      <br>
     <div class="form-group">
-        <label asp-for="accidentes.NumeroAccidente"></label>
+        <label asp-for="accidentes.NumeroAccidente">Número de Radicado</label>
         <input asp-for="accidentes.NumeroAccidente" class="form-control">
         <span class="text-danger" asp-validation-for="accidentes.NumeroAccidente"></span>
     </div>
+
+
+            <div class=" col-md-12">
+                <div class="h-divider"></div>
+            </div>
+
+
+            <div class="col-xs-12 wow animated slideInLeft" data-wow-delay=".5s">
+
+                <label asp-for="accidentes.Fecha">Fecha de Acontecimiento:</label>
+                <input asp-for="accidentes.Fecha" class="form-control">
+                <span class="text-danger" asp-validation-for="accidentes.Fecha"></span>
+
+                <label asp-for="accidentes.TipoAccidente">Tipo de Accidente:</label>
+                <input asp-for="accidentes.TipoAccidente" class="form-control">
+                <span class="text-danger" asp-validation-for="accidentes.TipoAccidente"></span>
+
+                 <label asp-for="accidentes.Peritaje">Peritaje:</label>
+                <input asp-for="accidentes.Peritaje" class="form-control">
+                <span class="text-danger" asp-validation-for="accidentes.Peritaje"></span>
+
+
+                 <label asp-for="accidentes.Direccion">Direccion:</label>
+                <input asp-for="accidentes.Direccion" class="form-control">
+                <span class="text-danger" asp-validation-for="accidentes.Direccion"></span>
+
+	</br>
+
+
+
 
       <button type="submit" class="btn btn-primary"> Guardar </button>
       </form>

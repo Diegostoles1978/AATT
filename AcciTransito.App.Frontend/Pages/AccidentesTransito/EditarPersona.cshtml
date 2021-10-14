@@ -1,0 +1,20 @@
+@page
+@model AcciTransito.App.Frontend.Pages.EditarPersonaModel
+@{
+}
+
+<h4>Editar Persona: @Model.personas.NumeroIdentificacion</h4>
+<form method="post">
+    <input type="hidden" asp-for="personas.id"/>
+      <br>
+    <div class="form-group">
+        <label asp-for="personas.NumeroIdentificacion">Número de Identificacion</label>
+        <input asp-for="personas.NumeroIdentificacion" class="form-control">
+        <span class="text-danger" asp-validation-for="personas.NumeroIdentificacion"></span>
+    </div>
+
+
+      <button type="submit" class="btn btn-primary"> Guardar </button>
+      </form>
+
+      <a asp-page="./ListaPersonas" class="btn-default">Lista de Personas</a>

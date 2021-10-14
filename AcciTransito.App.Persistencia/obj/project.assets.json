@@ -7271,11 +7271,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Persistencia\\AcciTransito.App.Persistencia.csproj",
+      "projectUniqueName": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.persistencia\\AcciTransito.App.Persistencia.csproj",
       "projectName": "AcciTransito.App.Persistencia",
-      "projectPath": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Persistencia\\AcciTransito.App.Persistencia.csproj",
+      "projectPath": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.persistencia\\AcciTransito.App.Persistencia.csproj",
       "packagesPath": "C:\\Users\\mileniso\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Persistencia\\obj\\",
+      "outputPath": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.persistencia\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mileniso\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -7343,13 +7343,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.413\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Persistencia\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

@@ -25,8 +25,12 @@
             <td > @perso.Apellidos</td>
             <td > @perso.Genero</td>
 
-             <td> <a class="btn btn-primary table-btn" asp-page="AccidentesTransito/ListaPersonas" asp-route-id="@perso.id">
-             Detalle Persona</a></td>
+
+             <td> <a class="btn btn-primary table-btn" asp-page="/AccidentesTransito/DetallePersona" asp-route-id="@perso.id">
+                <i class="fas fa-info-circle"></i>Detalle Persona</a></td>
+
+                <td> <a class="btn btn-primary table-btn" asp-page="/AccidentesTransito/EditarPersona" asp-route-id="@perso.id">
+                <i class="fas fa-info-circle"></i>Editar Persona</a></td>
 
 
 
