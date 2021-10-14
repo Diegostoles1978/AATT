@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: " Courier New,Open Sans", sans-serif;
   color: #c7c2c2;
   background-color: #e3e7e7;
 }
@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 .wrap {
   max-width: 1500px;
   margin: auto;
-  background: #fff;
+  background: rgb(48, 47, 47);
   box-shadow: 0px 2px 17px rgba(0, 0, 0, 0.1);
 }
 
@@ -52,13 +52,13 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.4s;
 }
 .back-to-top i {
-  font-size: 28px;
-  color: #fff;
+  font-size: 30px;
+  color: rgb(17, 16, 16);
   line-height: 0;
 }
 .back-to-top:hover {
   background: #6bc08e;
-  color: rgb(221, 219, 219);
+  color: rgb(80, 78, 78);
 }
 .back-to-top.active {
   visibility: visible;
@@ -92,7 +92,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 #header .logo h1 a, #header .logo h1 a:hover {
-  color: #fff;
+  color: rgb(8, 29, 216);
   text-decoration: none;
 }
 #header .logo img {
@@ -129,9 +129,9 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
-  color: #fff;
+  color: rgb(192, 189, 189);
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -153,8 +153,8 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  background: rgb(94, 95, 95);
+  box-shadow: 0px 0px 30px rgba(195, 195, 201, 0.25);
   transition: 0.3s;
 }
 .navbar .dropdown ul li {
@@ -224,7 +224,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(43, 43, 43, 0.9);
+  background: rgba(41, 40, 40, 0.9);
   transition: 0.3s;
   z-index: 999;
 }
@@ -248,7 +248,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile a, .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #b3aeae;
+  color: #494949;
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
   color: #4eb478;
@@ -292,7 +292,7 @@ h1, h2, h3, h4, h5, h6 {
   background: url("../img/hero-bg.jpg") top center;
   background-size: initial;
   position: relative;
-  border-bottom: 1px solid #222;
+  border-bottom: 3px solid rgb(100, 98, 98);
 }
 #hero:before {
   content: "";
@@ -344,7 +344,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #4eb478;
   border: 2px solid #4eb478;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1028px) {
   #hero {
     background-attachment: fixed;
   }
@@ -954,186 +954,7 @@ section {
   transition: bottom ease-in-out 0.4s;
 }
 
-/*--------------------------------------------------------------
-# Pricing
---------------------------------------------------------------*/
-.pricing .row {
-  padding-top: 40px;
-}
-.pricing .box {
-  padding: 40px;
-  margin-bottom: 30px;
-  box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
-  background: #fff;
-  text-align: center;
-}
-.pricing h3 {
-  font-weight: 300;
-  margin-bottom: 15px;
-  font-size: 28px;
-}
-.pricing h4 {
-  font-size: 46px;
-  color: #4eb478;
-  font-weight: 400;
-  font-family: "Open Sans", sans-serif;
-  margin-bottom: 25px;
-}
-.pricing h4 span {
-  color: #bababa;
-  font-size: 18px;
-  display: block;
-}
-.pricing ul {
-  padding: 0;
-  list-style: none;
-  color: #999;
-  text-align: left;
-  line-height: 20px;
-}
-.pricing ul li {
-  padding-bottom: 12px;
-}
-.pricing ul i {
-  color: #4eb478;
-  font-size: 18px;
-  padding-right: 4px;
-}
-.pricing ul .na {
-  color: #ccc;
-}
-.pricing ul .na i {
-  color: #ccc;
-}
-.pricing ul .na span {
-  text-decoration: line-through;
-}
-.pricing .get-started-btn {
-  display: inline-block;
-  padding: 8px 30px;
-  border-radius: 5px;
-  color: #444444;
-  transition: none;
-  font-size: 15px;
-  font-weight: 400;
-  font-family: "Raleway", sans-serif;
-  transition: 0.3s;
-  font-weight: 500;
-  border: 2px solid #dddddd;
-}
-.pricing .get-started-btn:hover {
-  color: #4eb478;
-  border-color: #4eb478;
-}
-.pricing .featured {
-  z-index: 10;
-  margin: -30px -5px 0 -5px;
-  background: #4eb478;
-}
-.pricing .featured h3, .pricing .featured h4, .pricing .featured h4 span, .pricing .featured ul, .pricing .featured ul .na, .pricing .featured ul i, .pricing .featured ul .na i {
-  color: #fff;
-}
-.pricing .featured .get-started-btn {
-  border-color: #fff;
-  color: #fff;
-}
-.pricing .featured .get-started-btn:hover {
-  color: #4eb478;
-  background: #fff;
-}
-@media (max-width: 992px) {
-  .pricing .box {
-    max-width: 60%;
-    margin: 0 auto 30px auto;
-  }
-}
-@media (max-width: 767px) {
-  .pricing .box {
-    max-width: 80%;
-    margin: 0 auto 30px auto;
-  }
-}
-@media (max-width: 420px) {
-  .pricing .box {
-    max-width: 100%;
-    margin: 0 auto 30px auto;
-  }
-}
 
-/*--------------------------------------------------------------
-# F.A.Q
---------------------------------------------------------------*/
-.faq {
-  background: #f3faf6;
-  padding: 60px 0;
-}
-.faq .section-title span {
-  color: #f1f1f1;
-}
-.faq .faq-list {
-  padding: 0 100px;
-}
-.faq .faq-list ul {
-  padding: 0;
-  list-style: none;
-}
-.faq .faq-list li + li {
-  margin-top: 15px;
-}
-.faq .faq-list li {
-  padding: 20px;
-  background: #fff;
-  border-radius: 4px;
-  position: relative;
-}
-.faq .faq-list a {
-  display: block;
-  position: relative;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 500;
-  padding: 0 30px;
-  outline: none;
-  cursor: pointer;
-}
-.faq .faq-list .icon-help {
-  font-size: 24px;
-  position: absolute;
-  right: 0;
-  left: 20px;
-  color: #a8dabc;
-}
-.faq .faq-list .icon-show, .faq .faq-list .icon-close {
-  font-size: 24px;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-.faq .faq-list p {
-  margin-bottom: 0;
-  padding: 10px 0 0 0;
-}
-.faq .faq-list .icon-show {
-  display: none;
-}
-.faq .faq-list a.collapsed {
-  color: #343a40;
-}
-.faq .faq-list a.collapsed:hover {
-  color: #4eb478;
-}
-.faq .faq-list a.collapsed .icon-show {
-  display: inline-block;
-}
-.faq .faq-list a.collapsed .icon-close {
-  display: none;
-}
-@media (max-width: 1200px) {
-  .faq .faq-list {
-    padding: 0;
-  }
-}
 
 /*--------------------------------------------------------------
 # Contact Us
