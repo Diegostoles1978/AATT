@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using AcciTransito.App.Frontend.Areas.Identity;
+
 
 [assembly: HostingStartup(typeof(AcciTransito.App.Frontend.Areas.Identity.IdentityHostingStartup))]
 namespace AcciTransito.App.Frontend.Areas.Identity
@@ -20,7 +22,7 @@ namespace AcciTransito.App.Frontend.Areas.Identity
                         context.Configuration.GetConnectionString("IdentityDataContextConnection")));
 
                 services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                    .AddEntityFrameworkStores<IdentityDataContext>();
+                 .AddEntityFrameworkStores<IdentityDataContext>();
             });
         }
     }

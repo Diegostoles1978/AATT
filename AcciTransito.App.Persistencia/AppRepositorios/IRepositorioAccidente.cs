@@ -11,6 +11,7 @@ namespace AcciTransito.App.Persistencia
         void DeleteAccidente(int id);
         Accidentes GetAccidente(int id);
 
+
         Accidentes UpdateAccidente(Accidentes accidente);
     }
 

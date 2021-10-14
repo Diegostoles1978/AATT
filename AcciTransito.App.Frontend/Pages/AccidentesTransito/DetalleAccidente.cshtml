@@ -1,0 +1,15 @@
+@page
+@model AcciTransito.App.Frontend.Pages.DetalleAccidenteModel
+@{
+}
+<h1>@Model.accidentes.NumeroAccidente</h1>
+
+<p>Id: @Model.accidentes.id</p>
+<p>Numero Accidente: @Model.accidentes.NumeroAccidente</p>
+<p>Fecha: @Model.accidentes.Fecha</p>
+<p>Tipo Accidente: @Model.accidentes.TipoAccidente</p>
+<p>Peritaje: @Model.accidentes.Peritaje</p>
+<p>Direccion: @Model.accidentes.Direccion</p>
+<p>Barrio: @Model.accidentes.Barrio</p>
+<a class="text-primary" asp-page="/AccidentesTransito/ListaAccidentes">Lista de Accidentes</a>
+

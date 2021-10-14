@@ -37,8 +37,10 @@ namespace AcciTransito.App.Persistencia
         }
 
         public Accidentes GetAccidente(int id) {
-          return _appContext.Accidentes.FirstOrDefault (p => p.id==id);
+          return _appContext.Accidentes.SingleOrDefault (p => p.id==id); //FirstOrDefault
         }
+
+
 
         public Accidentes UpdateAccidente(Accidentes accidente) {
             var accidenteEncontrado= _appContext.Accidentes.FirstOrDefault(p => p.id==accidente.id);

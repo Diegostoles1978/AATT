@@ -1,0 +1,19 @@
+@page
+@model AcciTransito.App.Frontend.Pages.EditarAccidenteModel
+@{
+}
+
+<h2>Editar Accidente: @Model.accidentes.NumeroAccidente</h2>
+<form method="post">
+    <input type="hidden" asp-for="accidentes.id"/>
+
+    <div class="form-group">
+        <label asp-for="accidentes.NumeroAccidente"></label>
+        <input asp-for="accidentes.NumeroAccidente" class="form-control">
+        <span class="text-danger" asp-validation-for="accidentes.NumeroAccidente"></span>
+    </div>
+
+      <button type="submit" class="btn btn-primary"> Guardar </button>
+      </form>
+
+      <a asp-page="./ListaAccidentes" class="btn-default">Lista de Accidentes</a>

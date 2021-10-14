@@ -30,6 +30,7 @@ namespace AcciTransito.App.Frontend
             services.AddScoped<IRepositorioAccidente,RepositorioAccidentes>();
             services.AddRazorPages();
             services.AddControllersWithViews();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -57,9 +58,9 @@ namespace AcciTransito.App.Frontend
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute(
+                 endpoints.MapControllerRoute(
                     name:"default",
-                    pattern: "{controller-Conference}/{action=Index}/{id?}");
+                    pattern: "{controller-home}/{action=index}/{id?}");
 
                 endpoints.MapRazorPages();
             });

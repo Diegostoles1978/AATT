@@ -9,7 +9,8 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace AcciTransito.App.Frontend.Pages
 {
-    [Authorize]
+
+[Authorize]
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
@@ -23,5 +24,17 @@ namespace AcciTransito.App.Frontend.Pages
         {
 
         }
+
+         public void OnPost()
+    {
+
+    }
+
+    public void OnPostAuthorized()
+    {
+
+    }
     }
 }
+
+

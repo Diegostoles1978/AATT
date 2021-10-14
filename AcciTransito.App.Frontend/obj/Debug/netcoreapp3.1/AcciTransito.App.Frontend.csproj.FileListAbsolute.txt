@@ -175,3 +175,7 @@ C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Frontend\obj\Debug\netc
 C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_LoginPartial.cshtml.g.cs
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.frontend\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authorization.dll
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.frontend\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Metadata.dll
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.frontend\obj\Debug\netcoreapp3.1\Razor\Pages\AccidentesTransito\DetalleAccidente.cshtml.g.cs
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.frontend\obj\Debug\netcoreapp3.1\Razor\Pages\AccidentesTransito\EditarAccidente.cshtml.g.cs
