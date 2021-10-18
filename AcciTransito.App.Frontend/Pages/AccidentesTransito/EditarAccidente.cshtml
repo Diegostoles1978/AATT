@@ -14,7 +14,7 @@
     </div>
 
 
-            <div class=" col-md-12">
+            <div class=" col-md-8">
                 <div class="h-divider"></div>
             </div>
 
@@ -25,9 +25,20 @@
                 <input asp-for="accidentes.Fecha" class="form-control">
                 <span class="text-danger" asp-validation-for="accidentes.Fecha"></span>
 
-                <label asp-for="accidentes.TipoAccidente">Tipo de Accidente:</label>
-                <input asp-for="accidentes.TipoAccidente" class="form-control">
-                <span class="text-danger" asp-validation-for="accidentes.TipoAccidente"></span>
+
+                 <label asp-for="accidentes.TipoAccidente">Tipo de Accidente:</label>
+
+                    <select asp-for="accidentes.TipoAccidente" class="form-control">
+			            <option value="0">Atropellamiento</option>
+                        <option value="1">Caida de Pasajero</option>
+                        <option value="2">Choque Vehicular</option>
+                        <option value="3">Volcamiento</option>
+                        <option value="4">Solo daños</option>
+                    </select>
+                    <span class="text-danger" asp-validation-for="accidentes.TipoAccidente"></span>
+
+
+
 
                  <label asp-for="accidentes.Peritaje">Peritaje:</label>
                 <input asp-for="accidentes.Peritaje" class="form-control">
@@ -43,7 +54,7 @@
 
 
 
-      <button type="submit" class="btn btn-primary"> Guardar </button>
+      <button type="submit" class="btn btn-success"> <i class="fas fa-save"></i></button>
       </form>
 
       <a asp-page="./ListaAccidentes" class="btn-default">Lista de Accidentes</a>

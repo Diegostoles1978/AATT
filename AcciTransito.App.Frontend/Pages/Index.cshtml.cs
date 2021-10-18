@@ -30,10 +30,7 @@ namespace AcciTransito.App.Frontend.Pages
 
     }
 
-    public void OnPostAuthorized()
-    {
 
-    }
     }
 }
 

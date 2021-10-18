@@ -10,13 +10,13 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 namespace AcciTransito.App.Frontend.Pages
 {
 
-   public class ListModel : PageModel
+   public class ListModel5 : PageModel
     {
 
        private readonly IRepositorioAccidente repositorioaccidente;
        public   IEnumerable<Accidentes> accidentes {get;set;}
 
-       public ListModel(IRepositorioAccidente repositorioaccidente)
+       public ListModel5(IRepositorioAccidente repositorioaccidente)
        {
             this.repositorioaccidente=repositorioaccidente;
        }

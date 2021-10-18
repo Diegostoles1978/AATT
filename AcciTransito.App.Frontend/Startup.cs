@@ -28,6 +28,7 @@ namespace AcciTransito.App.Frontend
 
             services.AddScoped<IRepositorioPersonas,RepositorioPersona>();
             services.AddScoped<IRepositorioAccidente,RepositorioAccidentes>();
+            services.AddScoped<IRepositorioVehiculo,RepositorioVehiculo>();
             services.AddRazorPages();
             services.AddControllersWithViews();
 

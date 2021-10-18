@@ -1,5 +1,5 @@
 @page
-@model AcciTransito.App.Frontend.Pages.ListModel1
+@model AcciTransito.App.Frontend.Pages.ListModel
 @{
 }
 
@@ -26,31 +26,19 @@
             <td > @perso.Genero</td>
 
 
-             <td> <a class="btn btn-primary table-btn" asp-page="/AccidentesTransito/DetallePersona" asp-route-id="@perso.id">
-                <i class="fas fa-info-circle"></i>Detalle Persona</a></td>
+             <td> <a class="btn btn-success table-btn" asp-page="/AccidentesTransito/DetallePersona" asp-route-id="@perso.id">
+                <i class="fas fa-user-check"></i></a></td>
 
-                <td> <a class="btn btn-primary table-btn" asp-page="/AccidentesTransito/EditarPersona" asp-route-id="@perso.id">
-                <i class="fas fa-info-circle"></i>Editar Persona</a></td>
-
-
-
-
+                <td> <a class="btn btn-success table-btn" asp-page="/AccidentesTransito/EditarPersona" asp-route-id="@perso.id">
+                <i class="fas fa-user-edit fa-lg" aria-hidden="true"></i></a></td>
         </tr>
+
 
 
    }
 </tbody>
+ <td><a  class="btn btn-primary table-btn" asp-page="/AccidentesTransito/EditarPersona" class="btn btn-success"><i class="fas fa-user-plus">- Crear Persona</i></a></td>
 </table>
-
-
-@* <div class="d-grid gap- d-md-flex justify-content-md-end relative fullwidth col-xs-15end">
- <button type="submit" id="actualizar" name="submit" class="form-btn-submit semibold" style="color:teal; background-color:white; height:50px; width:100px; font-size:16px;" >Actualizar</button>
- <button type="submit" id="eliminar" name="submit" class="form-btn-submit semibold" style="color:teal;background-color:white;  height:50px; width:100px; font-size:16px;">Eliminar</button>
- <button type="submit" id="eliminar" name="submit" class="form-btn-submit semibold" style="color:teal; background-color:white; height:50px; width:100px; font-size:16px;">Guardar</button>
-  </div>
-     <div class="clear"></div>
-
-</body> *@
 
 
 

@@ -11,26 +11,26 @@ namespace AcciTransito.App.Frontend.Pages
     {
         public class EditarPersonaModel : PageModel
     {
-        private readonly IRepositorioPersonas repositorioPersonas;
+        private readonly IRepositorioPersonas repositoriopersonas;
         [BindProperty]
-        public Personas personas {get;set;}
+        public Personas personaje {get;set;}
 
-        public EditarPersonaModel(IRepositorioPersonas repositorioPersonas)
+        public EditarPersonaModel(IRepositorioPersonas repositoriopersonas)
         {
-            this.repositorioPersonas=repositorioPersonas;
+            this.repositoriopersonas=repositoriopersonas;
 
         }
-        public IActionResult OnGet(int? id)
+         public IActionResult OnGet(int? id)
         {
             if(id.HasValue)
             {
-            personas= repositorioPersonas.GetPersonas(id.Value);
+            personaje= repositoriopersonas.GetPersonas(id.Value);
             }
             else
             {
-                personas = new Personas();
+                personaje = new Personas();
             }
-            if (personas==null)
+            if (personaje==null)
             {
                 return RedirectToPage("./NotFound");
             }
@@ -39,19 +39,20 @@ namespace AcciTransito.App.Frontend.Pages
             }
 
         }
-         public IActionResult OnPost()
+
+          public IActionResult OnPost()
         {
             if(!ModelState.IsValid)
             {
                 return Page();
             }
-            if(personas.id>0)
+            if(personaje.id>0)
             {
-                personas = repositorioPersonas.UpdatePersonas(personas);
+                personaje = repositoriopersonas.UpdatePersonas(personaje);
             }
             else
             {
-                repositorioPersonas.AddPersonas(personas);
+                repositoriopersonas.AddPersonas(personaje);
             }
             return Page();
         }

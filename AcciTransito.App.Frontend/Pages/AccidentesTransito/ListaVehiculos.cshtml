@@ -1,0 +1,42 @@
+@page
+@model AcciTransito.App.Frontend.Pages.ListaVehiculoModel
+@{
+}
+
+<h3>Listado de Vehiculos</h3>
+<table class="table table-bordered">
+     <tr>
+
+<caption>Información Vehiculos</caption>
+
+ <th scope="col" > Placa</td>
+ <th scope="col" > Marca</td>
+ <th scope="col" > Modelo</td>
+ <th scope="col" > TipoVehiculo</td>
+ <th scope="col" > Licencia Transito</td>
+<tbody>
+    @foreach (var vehi in Model.vehiculo)
+    {
+
+        <tr>
+
+            <td > @vehi.Placa</td>
+            <td > @vehi.Marca</td>
+            <td > @vehi.Modelo</td>
+            <td > @vehi.TipoVehiculo</td>
+            <td > @vehi.LicenciaTransito</td>
+
+
+             <td> <a class="btn btn-success table-btn" asp-page="/AccidentesTransito/DetalleVehiculo" asp-route-id="@vehi.id">
+                <i class="fas fa-info-circle"></i></a></td>
+
+                <td> <a class="btn btn-success table-btn" asp-page="/AccidentesTransito/EditarVehiculo" asp-route-id="@vehi.id">
+                <i class="fas fa-car fa-lg" aria-hidden="true"></i></a></td>
+
+        </tr>
+
+
+   }
+</tbody>
+</table>
+<a asp-page="/AccidentesTransito/EditarVehiculo" class="btn btn-success">Crear Vehiculo</a>

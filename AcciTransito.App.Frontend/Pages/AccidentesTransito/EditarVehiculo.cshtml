@@ -1,0 +1,46 @@
+@page
+@model AcciTransito.App.Frontend.Pages.EditarVehiculoModel
+@{
+}
+
+<h4>Editar Vehiculo: @Model.vehiculos.Placa</h4>
+<form method="post">
+    <input type="hidden" asp-for="vehiculos.id"/>
+      <br>
+    <div class="form-group">
+        <label asp-for="vehiculos.Placa">Placa</label>
+        <input asp-for="vehiculos.Placa" class="form-control form-control-inline">
+        <span class="text-danger" asp-validation-for="vehiculos.Placa"></span>
+    </div>
+
+
+            <div class=" col-md-12">
+                <div class="h-divider"></div>
+            </div>
+
+
+            <div class="col-xs-12 wow animated slideInLeft" data-wow-delay=".5s">
+
+                <label asp-for="vehiculos.Marca"> Marca Vehiculo:</label>
+                <input asp-for="vehiculos.Marca" class="form-control form-control-inline">
+                <span class="text-danger" asp-validation-for="vehiculos.Marca"></span>
+
+
+                <label asp-for="vehiculos.Modelo">Modelo:</label>
+                <input asp-for="vehiculos.Modelo" class="form-control form-control-inline">
+                <span class="text-danger" asp-validation-for="vehiculos.Modelo"></span>
+
+
+                 <label asp-for="vehiculos.TipoVehiculo">Tipo de Vehiculo:</label>
+                <input asp-for="vehiculos.TipoVehiculo" class="form-control form-control-inline " width="80" height="30">
+                <span class="text-danger" asp-validation-for="vehiculos.TipoVehiculo"></span>
+
+	</br>
+
+
+
+
+      <button type="submit" class="btn btn-primary"> <i class="fas fa-save"></i> </button>
+      </form>
+
+      <a asp-page="./ListaVehiculos" class="btn-default"><i class="fas fa-list-alt"></i></a>

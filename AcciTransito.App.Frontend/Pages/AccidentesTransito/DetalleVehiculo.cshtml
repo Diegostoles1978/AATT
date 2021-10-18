@@ -1,0 +1,14 @@
+
+
+@page
+@model AcciTransito.App.Frontend.Pages.DetalleVehiculoModel
+@{
+}
+<h2>@Model.vehiculos.Placa</h2>
+
+<p>Placa @Model.vehiculos.Placa</p>
+<p>Marca: @Model.vehiculos.Marca</p>
+<p> Modelo: @Model.vehiculos.Modelo</p>
+<p>Tipo de Vehiculo: @Model.vehiculos.TipoVehiculo</p>
+<p>Licencia de Transito: @Model.vehiculos.LicenciaTransito</p>
+<a class="text-primary" asp-page="/AccidentesTransito/ListaVehiculos">Lista de Vehiculos</a>

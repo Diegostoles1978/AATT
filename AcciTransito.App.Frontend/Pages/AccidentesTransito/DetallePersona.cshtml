@@ -2,15 +2,15 @@
 @model AcciTransito.App.Frontend.Pages.DetallePersonaModel
 @{
 }
-<h2>@Model.personas.NumeroIdentificacion</h2>
+<h2>@Model.personaje.NumeroIdentificacion</h2>
 
-<p>Tipo de Documento: @Model.personas.TipoDocumento</p>
-<p>Número de Identificación: @Model.personas.NumeroIdentificacion</p>
-<p>Nombres: @Model.personas.Nombres</p>
-<p>Apellidos: @Model.personas.Apellidos</p>
-<p>Fecha de Nacimiento: @Model.personas.FechaNacimiento</p>
-<p>Direccion: @Model.personas.Direccion</p>
-<p>Ciudad: @Model.personas.Ciudad</p>
-<p>Contacto: @Model.personas.NumeroCelular</p>
-<p>Contacto Alterno: @Model.personas.ContactoAlterno</p>
+<p>Tipo de Documento: @Model.personaje.TipoDocumento</p>
+<p>Número de Identificación: @Model.personaje.NumeroIdentificacion</p>
+<p>Nombres: @Model.personaje.Nombres</p>
+<p>Apellidos: @Model.personaje.Apellidos</p>
+<p>Fecha de Nacimiento: @Model.personaje.FechaNacimiento</p>
+<p>Dirección: @Model.personaje.Direccion</p>
+<p>Ciudad: @Model.personaje.Ciudad</p>
+<p>Contacto: @Model.personaje.NumeroCelular</p>
+<p>Contacto Alterno: @Model.personaje.ContactoAlterno</p>
 <a class="text-primary" asp-page="/AccidentesTransito/ListaPersonas">Lista de Personas</a>

@@ -4,6 +4,6 @@ namespace AcciTransito.App.Dominio.Entidades
 {
     public enum TipoDocumento
     {
-     RC,CC,CE,
+     RegistroCivil,CeduladeCiudadania,CeduladeExtranjeria,
     }
 }

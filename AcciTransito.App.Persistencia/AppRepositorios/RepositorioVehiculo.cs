@@ -40,7 +40,7 @@ namespace AcciTransito.App.Persistencia
         }
 
         public Vehiculos GetVehiculos(int id) {
-          return _appContext.Vehiculos.FirstOrDefault (p => p.id==id);
+          return _appContext.Vehiculos.SingleOrDefault (p => p.id==id);
         }
 
         public Vehiculos UpdateVehiculos(Vehiculos vehiculo) {

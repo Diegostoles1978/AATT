@@ -1,10 +1,15 @@
 @page
-@model AcciTransito.App.Frontend.Pages.ListModel
+@model AcciTransito.App.Frontend.Pages.ListModel5
 @{
 }
 <body>
-<h2>ListadeAccidentes</h2>
+<h4>Accidentes</h4>
 <table class="table table-bordered">
+    <caption>Información de Accidentes</caption>
+
+ <th scope="col" > Número de Accidente</td>
+ <th scope="col" > Tipo de Accidente</td>
+
 
     @foreach (var acci in Model.accidentes)
     {
@@ -13,18 +18,18 @@
 
             <td> @acci.NumeroAccidente</td>
             <td> @acci.TipoAccidente</td>
-            <td> <a class="btn btn-primary table-btn" asp-page="/AccidentesTransito/DetalleAccidente" asp-route-id="@acci.id">
-                <i class="fas fa-info-circle"></i>Detalle Accidente</a></td>
+            <td> <a class="btn btn-success table-btn" asp-page="/AccidentesTransito/DetalleAccidente" asp-route-id="@acci.id">
+                <i class="fas fa-list-alt"></i></a></td>
 
-                <td> <a class="btn btn-primary table-btn" asp-page="/AccidentesTransito/EditarAccidente" asp-route-id="@acci.id">
-                <i class="fas fa-info-circle"></i>Editar Accidente</a></td>
+                <td> <a class="btn btn-success table-btn" asp-page="/AccidentesTransito/EditarAccidente" asp-route-id="@acci.id">
+                <i class="fas fa-car-crash fa-lg" aria-hidden="true"></i></a></td>
        </tr>
 
 
    }
-
+<td><a asp-page="/AccidentesTransito/EditarAccidente" class="btn btn-success"><i class="fas fa-folder-plus">- Crear Accidente</i></a></td>
 </table>
 
-<a asp-page="/AccidentesTransito/EditarAccidente" class="btn btn-primary">Crear Accidente</a>
+
 
 </body>

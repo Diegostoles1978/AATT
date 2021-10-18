@@ -18,9 +18,9 @@ namespace AcciTransito.App.Persistencia
         ///</summary>
         ///<param name="appContext"></param>//
 
-        public RepositorioPersona(AppContext appContext) {
-            _appContext = appContext;
-        }
+
+        public RepositorioPersona(AppContext appContext) => _appContext = appContext;
+
         public Personas AddPersonas(Personas personas) {
             var personasAdicionar = _appContext.Personas.Add(personas);
             _appContext.SaveChanges();
@@ -35,18 +35,19 @@ namespace AcciTransito.App.Persistencia
             _appContext.Personas.Remove(personasEncontrada);
             _appContext.SaveChanges();
         }
-        public IEnumerable<Personas> GetAll() {
+        public IEnumerable<Personas> GetAllPersonas() {
             return _appContext.Personas;
         }
 
-        public Personas GetPersonas(int id) {
-            return _appContext.Personas.FirstOrDefault(p => p.id == id);
+        public Personas GetPersonas(int idpersona) {
+            return _appContext.Personas.SingleOrDefault(p => p.id == idpersona);
         }
 
         public Personas UpdatePersonas(Personas personas) {
             var personasEncontrada = _appContext.Personas.FirstOrDefault(p => p.id == personas.id);
             if (personasEncontrada != null) {
 
+                personasEncontrada.id = personas.id;
                 personasEncontrada.Nombres = personas.Nombres;
                 personasEncontrada.Apellidos = personas.Apellidos;
                 personasEncontrada.TipoDocumento=personas.TipoDocumento;

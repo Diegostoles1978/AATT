@@ -13,7 +13,7 @@ namespace AcciTransito.App.Frontend.Pages
     {
            private readonly IRepositorioPersonas repositorioPersonas;
 
-           public Personas personas {get;set;}
+           public Personas personaje {get;set;}
 
 
         public DetallePersonaModel(IRepositorioPersonas repositorioPersonas)
@@ -23,8 +23,8 @@ namespace AcciTransito.App.Frontend.Pages
 
         public IActionResult OnGet(int id)
         {
-            personas= repositorioPersonas.GetPersonas(id);
-            if (personas==null)
+            personaje= repositorioPersonas.GetPersonas(id);
+            if (personaje==null)
             {
                 return RedirectToPage("./NotFound");
             }
