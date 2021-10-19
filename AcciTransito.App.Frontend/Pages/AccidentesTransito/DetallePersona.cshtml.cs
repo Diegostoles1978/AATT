@@ -11,20 +11,20 @@ namespace AcciTransito.App.Frontend.Pages
 {
     public class DetallePersonaModel : PageModel
     {
-           private readonly IRepositorioPersonas repositorioPersonas;
+           private readonly IRepositorioPersonas repositoriopersonas;
 
-           public Personas personaje {get;set;}
+           public Personas personas {get;set;}
 
 
-        public DetallePersonaModel(IRepositorioPersonas repositorioPersonas)
+        public DetallePersonaModel(IRepositorioPersonas repositoriopersonas)
         {
-            this.repositorioPersonas=repositorioPersonas;
+            this.repositoriopersonas=repositoriopersonas;
         }
 
         public IActionResult OnGet(int id)
         {
-            personaje= repositorioPersonas.GetPersonas(id);
-            if (personaje==null)
+            personas= repositoriopersonas.GetPersonas(id);
+            if (personas==null)
             {
                 return RedirectToPage("./NotFound");
             }

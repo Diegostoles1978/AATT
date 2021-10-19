@@ -1,23 +1,18 @@
-
 using System.Collections.Generic;
 using System;
 using System.Diagnostics;
 using AcciTransito.App.Dominio.Entidades;
-
-
 namespace AcciTransito.App.Persistencia
 {
-    public interface IRepositorioPersonas
+   public interface IRepositorioPersonas
     {
-
-         IEnumerable<Personas> GetAllPersonas();
-       Personas AddPersonas(Personas personas);
-       Personas UpdatePersonas(Personas personas);
+       IEnumerable<Personas> GetAllPersona();
+       Personas AddPersonas(Personas persona);
       void DeletePersonas(int id);
 
-       Personas GetPersonas(int idpersona);
+       Personas GetPersonas(int id);
 
-
+        Personas UpdatePersonas(Personas persona);
     }
 
 

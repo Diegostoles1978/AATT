@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "r9dUS7MeKdH2cgDXskHcCLmCkmzIN/E55WEqddm8cvx+E6Lyl7MPFU7e6sjVSMOX7KejOk1GXwmlgt3rZOLaAA==",
+  "dgSpecHash": "B8YC5N2321zv2VRhDFHsjHZXqgiAfMEJRvhpF/J6ZdLuyjl+lbDEVJ0FGV/pCNlf1JI1xUYwil1IqopMZnIDVQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTRansito.App.Consola\\AcciTransito.App.Consola.csproj",
+  "projectFilePath": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Consola\\AcciTransito.App.Consola.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mileniso\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\mileniso\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

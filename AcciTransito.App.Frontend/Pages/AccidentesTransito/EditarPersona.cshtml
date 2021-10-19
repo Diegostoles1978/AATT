@@ -8,82 +8,87 @@
     .round1{
         background-color: white;
         margin:0 auto;
-        margin-top:5%;
+        margin-top:3%;
         padding:0;
         @* text-align:center; *@
-        border: 5px solid green;
+        border: 3px solid green;
         border-radius: 12px;
         padding: 5px;
     }
 </style>
 
-<h4>Editar Persona - Id: @Model.personaje.id</h4>
+<h4>Editar Persona - Id: @Model.personas1.id</h4>
 <form method="post">
-    <input type="hidden" asp-for="personaje.id"/>
+    <input type="hidden" asp-for="personas1.id"/>
 
 <div class="row" >
       <div class="col-sm-12 round1">
 
             <div class="d-grid gap-1 col-3 mx-auto text-center">
-                <label asp-for="personaje.NumeroIdentificacion">No. Documento de Identidad:</label>
-                <input asp-for="personaje.NumeroIdentificacion" name="licencia" id="licencia" required="required" class="form-licencia" />
-                 <span class="text-danger" asp-validation-for="personaje.NumeroIdentificacion"></span>
+                <label asp-for="personas1.NumeroIdentificacion">No. Documento de Identidad:</label>
+                <input asp-for="personas1.NumeroIdentificacion"  class="form-licencia" />
+                 <span class="text-danger" asp-validation-for="personas1.NumeroIdentificacion"></span>
             </div>    <br>
 
             <div class=" col-md-12">
                 <div class="h-divider"></div>   <br>
 
-            <div class="d-grid gap-4 col-4  ">
+            <div class="d-grid gap-4 col-6  ">
                 <label for="licencia" >DATOS DEL SINIESTRADO:</label>
             </div><br>
 
 
           <div class="col-xs-6 col-md-9 wow animatedslideInRight" data-wow-delay=".5s">
-                <label asp-for="personaje.Nombres">Nombres:</label>
-                <input asp-for="personaje.Nombres" name="nombres" id="nombres" required="required" class="form-nombre" placeholder="Escriba sus nombres" />
-                   <span class="text-danger" asp-validation-for="personaje.Nombres"></span>
 
-                   <label asp-for="personaje.Apellidos">Apellidos:</label>
-                 <input asp-for="personaje.Apellidos" name="apellidos" id="apellidos" required="required" class="form-apellido" placeholder="Escriba sus apellidos" /> <br>
-                 <span class="text-danger" asp-validation-for="personaje.Apellidos"></span>
+              <label asp-for="personas1.id">Id:</label>
+                <input asp-for="personas1.id"  class="form-id"  />
+                   <span class="text-danger" asp-validation-for="personas1.id"></span>
 
-                <label asp-for="personaje.TipoDocumento">Tipo de Documento:</label>
+                <label asp-for="personas1.Nombres">Nombres:</label>
+                <input asp-for="personas1.Nombres"  class="form-nombre" placeholder="Escriba sus nombres" />
+                   <span class="text-danger" asp-validation-for="personas1.Nombres"></span>
 
-                    <select asp-for="personaje.TipoDocumento" name="tipodocumento" id="tipodocumento" required="required" class="form-tipodocumento">
+                 <label asp-for="personas1.Apellidos">Apellidos:</label>
+                 <input asp-for="personas1.Apellidos"  class="form-apellido" placeholder="Escriba sus apellidos" /> <br>
+                 <span class="text-danger" asp-validation-for="personas1.Apellidos"></span>
+
+                <label asp-for="personas1.TipoDocumento">Tipo de Documento:</label>
+
+                    <select asp-for="personas1.TipoDocumento"  class="form-tipodocumento">
 			            <option value="" selected disabled>Seleccione la Opción</option>
                         <option value="0">Registro Civil</option>
                         <option value="1">Cedula de Ciudadania</option>
                         <option value="2">Cedula de Extranjeria</option>
 
                     </select>
-                    <span class="text-danger" asp-validation-for="personaje.TipoDocumento"></span>
-                <label asp-for="personaje.NumeroIdentificacion">No. Documento de Identidad:</label>
-                <input asp-for="personaje.NumeroIdentificacion" nname="identificacion" id="identificacion" required="required" class="form-id" placeholder="Escriba su numero de documento"/> <br>
-                       <span class="text-danger" asp-validation-for="personaje.NumeroIdentificacion"></span>
+                    <span class="text-danger" asp-validation-for="personas1.TipoDocumento"></span>
+                <label asp-for="personas1.NumeroIdentificacion">No. Documento de Identidad:</label>
+                <input asp-for="personas1.NumeroIdentificacion" class="form-id" placeholder="Escriba su numero de documento"/> <br>
+                       <span class="text-danger" asp-validation-for="personas1.NumeroIdentificacion"></span>
 
-                 <label asp-for="personaje.Direccion">Dirección de residencia:</label>
-                <input asp-for="personaje.Direccion"name="direccion" id="direccion" required="required" class="form-direccion" placeholder="Escriba su direccion" />
-                 <span class="text-danger" asp-validation-for="personaje.Direccion"></span>
+                 <label asp-for="personas1.Direccion">Dirección de residencia:</label>
+                <input asp-for="personas1.Direccion" class="form-direccion" placeholder="Escriba su direccion" />
+                 <span class="text-danger" asp-validation-for="personas1.Direccion"></span>
 
-            <label asp-for="personaje.NumeroCelular">No. Contacto:</label>
-                <input asp-for="personaje.NumeroCelular" name="contacto" id="contacto" required="required" class="form-contacto" placeholder="Escriba su numero de telefono" /><br>
-                <span class="text-danger" asp-validation-for="personaje.NumeroCelular"></span>
-
-
-            <label asp-for="personaje.ContactoAlterno">Contacto Alterno:</label>
-             <input asp-for="personaje.ContactoAlterno" name="contactoasociado" id="contactoasociado" required="required" class="form-calt" placeholder="Escriba su contacto alterno" /><br>
-            <span class="text-danger" asp-validation-for="personaje.ContactoAlterno"></span>
+            <label asp-for="personas1.NumeroCelular">No. Contacto:</label>
+                <input asp-for="personas1.NumeroCelular"  class="form-contacto" placeholder="Escriba su numero de telefono" /><br>
+                <span class="text-danger" asp-validation-for="personas1.NumeroCelular"></span>
 
 
-            <label asp-for="personaje.Genero">Genero:</label>
+            <label asp-for="personas1.ContactoAlterno">Contacto Alterno:</label>
+             <input asp-for="personas1.ContactoAlterno"  class="form-calt" placeholder="Escriba su contacto alterno" /><br>
+            <span class="text-danger" asp-validation-for="personas1.ContactoAlterno"></span>
 
-                    <select asp-for="personaje.Genero" name="genero" id="genero" required="required" class="form-genero" placeholder="Seleccione la Opción">
+
+            <label asp-for="personas1.Genero">Genero:</label>
+
+                    <select asp-for="personas1.Genero"  class="form-genero" placeholder="Seleccione la Opción">
                         <option value="0">Masculino</option>
                         <option value="1">Femenino</option>
                         <option value="2">Otro</option>
 
                     </select>
-                    <span class="text-danger" asp-validation-for="personaje.Genero"></span>
+                    <span class="text-danger" asp-validation-for="personas1.Genero"></span>
             </div>
 
 
@@ -95,7 +100,7 @@
 
       </form>
 
-          </div>
+
 
 
 

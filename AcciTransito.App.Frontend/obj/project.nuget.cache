@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "q8BMc+/Dcid0gaiFYjc3ypH1EfKa0OwQXwWDcsGPT2Pv+NcyYACea16hWM/5wKSK6boXJPiTW8feL8RdtNEBSQ==",
+  "dgSpecHash": "wCV0UhyMnzYA4YOG5YtpNs09To4j/sJoB5AnmbhCp0mJX1ahQtXIit63zhwN9Ge4mH3vey4zUTcaDusH++fmzg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.frontend\\AcciTransito.App.Frontend.csproj",
+  "projectFilePath": "C:\\Users\\mileniso\\Documents\\GitHub\\AATT\\AcciTransito.App.Frontend\\AcciTransito.App.Frontend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mileniso\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\mileniso\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.4\\microsoft.aspnetcore.authorization.3.1.4.nupkg.sha512",

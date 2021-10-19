@@ -2,38 +2,61 @@
 @model AcciTransito.App.Frontend.Pages.EditarVehiculoModel
 @{
 }
+<style>
 
-<h4>Editar Vehiculo: @Model.vehiculos.Placa</h4>
+
+    .round1{
+        background-color: white;
+        margin:0 auto;
+        margin-top:3%;
+        padding:0;
+        @* text-align:center; *@
+        border: 3px solid green;
+        border-radius: 12px;
+        padding: 5px;
+    }
+</style>
+<h4>Editar Vehiculo: @Model.vehiculos.id</h4>
 <form method="post">
     <input type="hidden" asp-for="vehiculos.id"/>
-      <br>
-    <div class="form-group">
-        <label asp-for="vehiculos.Placa">Placa</label>
-        <input asp-for="vehiculos.Placa" class="form-control form-control-inline">
-        <span class="text-danger" asp-validation-for="vehiculos.Placa"></span>
-    </div>
+      <div class="row" >
+      <div class="col-sm-12 round1">
+
+            <div class="d-grid gap-1 col-3 mx-auto text-center">
+                <label asp-for="vehiculos.Placa">No.Placa:</label>
+                <input asp-for="vehiculos.Placa"  class="form-placa" />
+                 <span class="text-danger" asp-validation-for="vehiculos.Placa"></span>
+            </div>    <br>
+
 
 
             <div class=" col-md-12">
-                <div class="h-divider"></div>
-            </div>
+                <div class="h-divider"></div>   <br>
+
+            <div class="d-grid gap-4 col-6  ">
+                <label for="licencia" >DATOS DEL VEHICULO:</label>
+            </div><br>
 
 
             <div class="col-xs-12 wow animated slideInLeft" data-wow-delay=".5s">
 
                 <label asp-for="vehiculos.Marca"> Marca Vehiculo:</label>
-                <input asp-for="vehiculos.Marca" class="form-control form-control-inline">
+                <input asp-for="vehiculos.Marca" class="form-marca"  />
                 <span class="text-danger" asp-validation-for="vehiculos.Marca"></span>
 
 
                 <label asp-for="vehiculos.Modelo">Modelo:</label>
-                <input asp-for="vehiculos.Modelo" class="form-control form-control-inline">
+                <input asp-for="vehiculos.Modelo"   class="form-modelo"  />  <br>
                 <span class="text-danger" asp-validation-for="vehiculos.Modelo"></span>
 
 
                  <label asp-for="vehiculos.TipoVehiculo">Tipo de Vehiculo:</label>
-                <input asp-for="vehiculos.TipoVehiculo" class="form-control form-control-inline " width="80" height="30">
+                <input asp-for="vehiculos.TipoVehiculo"  class="form-tipo"  />
                 <span class="text-danger" asp-validation-for="vehiculos.TipoVehiculo"></span>
+
+                <label asp-for="vehiculos.LicenciaTransito">Licencia de Transito:</label>
+                <input asp-for="vehiculos.LicenciaTransito"  class="form-tipo"  />
+                <span class="text-danger" asp-validation-for="vehiculos.LicenciaTransito"></span>
 
 	</br>
 

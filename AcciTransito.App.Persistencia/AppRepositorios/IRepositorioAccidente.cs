@@ -13,6 +13,9 @@ namespace AcciTransito.App.Persistencia
 
 
         Accidentes UpdateAccidente(Accidentes accidente);
+
+
+
     }
 
 

@@ -9,21 +9,21 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace AcciTransito.App.Frontend.Pages
 {
-    public class ListModel : PageModel
+    public class ListaPersonasModel : PageModel
     {
 
-       private readonly IRepositorioPersonas repositoriopersonas;
+       private readonly IRepositorioPersonas repositoriopersona;
        public   IEnumerable<Personas> personas {get;set;}
 
-       public ListModel(IRepositorioPersonas repositoriopersonas)
+       public ListaPersonasModel(IRepositorioPersonas repositoriopersona)
        {
-            this.repositoriopersonas=repositoriopersonas;
+            this.repositoriopersona=repositoriopersona;
        }
 
         public void OnGet()
         {
 
-          personas=repositoriopersonas.GetAllPersonas();
+          personas=repositoriopersona.GetAllPersona();
 
         }
     }

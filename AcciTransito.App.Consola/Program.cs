@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Linq;
 using AcciTransito.App.Dominio.Entidades;
 using AcciTransito.App.Persistencia;
 
@@ -15,11 +16,12 @@ namespace AcciTransito.App.Consola
         {
             Console.WriteLine("Hello World!");
 
-           AddPersonas();
-           AddVehiculos();
-           AddAccidentes();
+        //    AddPersonas();
+        //    AddVehiculos();
+        //    AddAccidentes();
 
-
+   var personas1 = _repoPersona.GetAllPersona();
+    Console.WriteLine(personas1.Count());
         }
 
         private static void AddPersonas()
@@ -30,7 +32,7 @@ namespace AcciTransito.App.Consola
 
                 Nombres = "Ana Maria",
                 Apellidos="Amado",
-                TipoDocumento=TipoDocumento.CC,
+                TipoDocumento=TipoDocumento.CeduladeCiudadania,
                 NumeroIdentificacion="53892870",
                 FechaNacimiento= new DateTime(2002, 10,01),
                 Direccion="Calle 116 No. 9-23",
@@ -44,7 +46,7 @@ namespace AcciTransito.App.Consola
               var personas1 = new Personas{
                 Nombres = "Diego",
                 Apellidos="Villamizar",
-                TipoDocumento=TipoDocumento.CC,
+                TipoDocumento=TipoDocumento.CeduladeCiudadania,
                 NumeroIdentificacion="9023485",
 
                 FechaNacimiento= new DateTime(1980, 05,15),
@@ -61,7 +63,7 @@ namespace AcciTransito.App.Consola
 
                 Nombres = "Cristian",
                 Apellidos="Barraza",
-                TipoDocumento=TipoDocumento.CC,
+                TipoDocumento=TipoDocumento.CeduladeCiudadania,
                 NumeroIdentificacion="100236759",
                 FechaNacimiento= new DateTime(1999, 03,17),
                 Direccion="Calle 29 Norte No 3-02",
@@ -89,7 +91,7 @@ namespace AcciTransito.App.Consola
                 TipoVehiculo= "Automovil",
                 LicenciaTransito="AS200",
                 Persona=new Personas{
-                TipoDocumento=TipoDocumento.CC,
+                TipoDocumento=TipoDocumento.CeduladeCiudadania,
                 NumeroIdentificacion="100236759",
                 Nombres = "Oscar ",
                 Apellidos="Habeych",

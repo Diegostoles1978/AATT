@@ -14,11 +14,14 @@ namespace AcciTransito.App.Frontend.Pages
     {
 
        private readonly IRepositorioAccidente repositorioaccidente;
+       private readonly IRepositorioPersonas repositoriopersonas;
        public   IEnumerable<Accidentes> accidentes {get;set;}
+       public   IEnumerable<Personas> per {get;set;}
 
-       public ListModel5(IRepositorioAccidente repositorioaccidente)
+       public ListModel5(IRepositorioAccidente repositorioaccidente, IRepositorioPersonas repositoriopersonas)
        {
             this.repositorioaccidente=repositorioaccidente;
+             this.repositoriopersonas=repositoriopersonas;
        }
 
 
@@ -27,6 +30,7 @@ namespace AcciTransito.App.Frontend.Pages
         {
 
           accidentes=repositorioaccidente.GetAllAccidente();
+          per=repositoriopersonas.GetAllPersona();
 
         }
     }

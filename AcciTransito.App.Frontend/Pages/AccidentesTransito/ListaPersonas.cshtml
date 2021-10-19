@@ -1,8 +1,8 @@
 @page
-@model AcciTransito.App.Frontend.Pages.ListModel
+@model AcciTransito.App.Frontend.Pages.ListaPersonasModel
 @{
 }
-
+<body>
 <h2>Personas</h2>
 <table class="table table-bordered">
      <tr>
@@ -13,32 +13,34 @@
  <th scope="col" > Nombres</td>
  <th scope="col" > Apellidos</td>
  <th scope="col" > Genero</td>
-<tbody>
-    @foreach (var perso in Model.personas)
+
+    @foreach (var item in Model.personas)
     {
 
 
         <tr>
 
-            <td > @perso.NumeroIdentificacion</td>
-            <td > @perso.Nombres</td>
-            <td > @perso.Apellidos</td>
-            <td > @perso.Genero</td>
+            <td > @item.NumeroIdentificacion</td>
+            <td > @item.Nombres</td>
+            <td > @item.Apellidos</td>
+            <td > @item.Genero</td>
 
 
-             <td> <a class="btn btn-success table-btn" asp-page="/AccidentesTransito/DetallePersona" asp-route-id="@perso.id">
+             <td> <a class="btn btn-success table-btn" asp-page="/AccidentesTransito/DetallePersona" asp-route-id="@item.id">
                 <i class="fas fa-user-check"></i></a></td>
 
-                <td> <a class="btn btn-success table-btn" asp-page="/AccidentesTransito/EditarPersona" asp-route-id="@perso.id">
+                <td> <a class="btn btn-success table-btn" asp-page="/AccidentesTransito/EditarPersona" asp-route-id="@item.id">
                 <i class="fas fa-user-edit fa-lg" aria-hidden="true"></i></a></td>
         </tr>
 
 
 
    }
-</tbody>
- <td><a  class="btn btn-primary table-btn" asp-page="/AccidentesTransito/EditarPersona" class="btn btn-success"><i class="fas fa-user-plus">- Crear Persona</i></a></td>
+
+
+ <td><a  class="btn btn-success table-btn" asp-page="/AccidentesTransito/EditarPersona" class="btn btn-success"><i class="fas fa-user-plus"> Crear Persona</i></a></td>
 </table>
+</body>
 
 
 

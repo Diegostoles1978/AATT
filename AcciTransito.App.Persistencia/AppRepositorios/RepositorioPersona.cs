@@ -19,9 +19,8 @@ namespace AcciTransito.App.Persistencia
         ///<param name="appContext"></param>//
 
 
-        public RepositorioPersona(AppContext appContext) => _appContext = appContext;
-
-        public Personas AddPersonas(Personas personas) {
+       public RepositorioPersona(AppContext appContext) => _appContext = appContext;
+       public Personas AddPersonas(Personas personas) {
             var personasAdicionar = _appContext.Personas.Add(personas);
             _appContext.SaveChanges();
             return personasAdicionar.Entity;
@@ -29,18 +28,18 @@ namespace AcciTransito.App.Persistencia
         }
 
         void IRepositorioPersonas.DeletePersonas(int id) {
-            var personasEncontrada = _appContext.Personas.FirstOrDefault(p => p.id == id);
+            var personasEncontrada = _appContext.Personas.FirstOrDefault(n => n.id == id);
             if (personasEncontrada == null)
                 return;
             _appContext.Personas.Remove(personasEncontrada);
             _appContext.SaveChanges();
         }
-        public IEnumerable<Personas> GetAllPersonas() {
+        public IEnumerable<Personas> GetAllPersona() {
             return _appContext.Personas;
         }
 
-        public Personas GetPersonas(int idpersona) {
-            return _appContext.Personas.SingleOrDefault(p => p.id == idpersona);
+        public Personas GetPersonas(int id) {
+            return _appContext.Personas.FirstOrDefault(p => p.id == id);
         }
 
         public Personas UpdatePersonas(Personas personas) {

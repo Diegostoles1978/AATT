@@ -2,10 +2,22 @@
 @model AcciTransito.App.Frontend.Pages.DetalleAccidenteModel
 @{
 }
+<style>
+    .round1{
+        background-color: white;
+        margin:0 auto;
+        margin-top:2%;
+        padding:0;
+        @* text-align:center; *@
+        border: 3px solid green;
+        border-radius: 12px;
+        padding: 5px;
+    }
+</style>
 <head>
 <title>Detalle Accidente</title> </head>
-<h3>Accidente:@Model.accidentes.NumeroAccidente</h3>
-
+<h5>Detalle Accidente No.:@Model.accidentes.NumeroAccidente</h5>
+<div class="col-sm-12 round1">
 <p>Id: @Model.accidentes.id</p>
 <p>Numero Accidente: @Model.accidentes.NumeroAccidente</p>
 <p>Fecha: @Model.accidentes.Fecha</p>
@@ -14,4 +26,5 @@
 <p>Direccion: @Model.accidentes.Direccion</p>
 <p>Barrio: @Model.accidentes.Barrio</p>
 <a class="text-primary" asp-page="/AccidentesTransito/ListaAccidentes">Lista de Accidentes</a>
+</div>
 
