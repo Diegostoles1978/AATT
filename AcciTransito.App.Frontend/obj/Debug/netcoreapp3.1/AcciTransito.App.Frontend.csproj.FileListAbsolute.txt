@@ -270,3 +270,16 @@ C:\Users\mileniso\Documents\GitHub\AATT\AcciTRansito.App.Frontend\obj\Debug\netc
 C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.frontend\obj\Debug\netcoreapp3.1\Razor\Pages\AccidentesTransito\DetalleVehiculo.cshtml.g.cs
 C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.frontend\obj\Debug\netcoreapp3.1\Razor\Pages\AccidentesTransito\ListaVehiculos.cshtml.g.cs
 C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.frontend\obj\Debug\netcoreapp3.1\Razor\Pages\AccidentesTransito\EditarVehiculo.cshtml.g.cs
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\AccidentesTransito\ListarPersonasGenero.cshtml.g.cs
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Frontend\bin\Debug\netcoreapp3.1\publish\web.config
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Frontend\bin\Debug\netcoreapp3.1\publish\AcciTransito.App.Frontend.deps.json
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Frontend\bin\Debug\netcoreapp3.1\publish\AcciTransito.App.Frontend.runtimeconfig.json
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Frontend\bin\Debug\netcoreapp3.1\publish\appsettings.Development.json
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Frontend\bin\Debug\netcoreapp3.1\publish\appsettings.json
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Frontend\bin\Debug\netcoreapp3.1\publish\wwwroot\vendor\bootstrap-icons\bootstrap-icons.json
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Frontend\bin\Debug\netcoreapp3.1\publish\publish\web.config
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Frontend\bin\Debug\netcoreapp3.1\publish\publish\AcciTransito.App.Frontend.deps.json
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Frontend\bin\Debug\netcoreapp3.1\publish\publish\AcciTransito.App.Frontend.runtimeconfig.json
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Frontend\bin\Debug\netcoreapp3.1\publish\publish\appsettings.Development.json
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Frontend\bin\Debug\netcoreapp3.1\publish\publish\appsettings.json
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Frontend\bin\Debug\netcoreapp3.1\publish\publish\wwwroot\vendor\bootstrap-icons\bootstrap-icons.json

@@ -14,6 +14,7 @@ namespace AcciTransito.App.Frontend.Pages
            private readonly IRepositorioAccidente repositorioaccidente;
 
            public Accidentes accidentes {get;set;}
+           public AgenteTransito agente {get;set;}
 
 
         public DetalleAccidenteModel(IRepositorioAccidente repositorioaccidente)
@@ -32,9 +33,24 @@ namespace AcciTransito.App.Frontend.Pages
                 return Page();
             }
 
+
+
         }
+        /* public IActionResult OnGet( int idAgente)
+        {
+            agente= repositorioaccidente.AsignarAgente( 1);
+            if (agente==null)
+            {
+                return RedirectToPage("./NotFound");
+            }
+            else{
+                return Page();
+            }
+       } */
     }
 }
+
+
 
 
 

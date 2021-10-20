@@ -62,6 +62,21 @@ namespace AcciTransito.App.Persistencia
 
              return accidenteEncontrado;
         }
+        AgenteTransito IRepositorioAccidente.AsignarAgente(int idaccidente, int idAgente)
+        {
+            var accidenteEncontrado = _appContext.Accidentes.FirstOrDefault(p => p.id == idaccidente);
+            if (accidenteEncontrado != null)
+            {
+                var agenteencontrado = _appContext.AgenteTransito.FirstOrDefault(m => m.Id == idAgente);
+                if (agenteencontrado != null)
+                {
+                    accidenteEncontrado.AgenteTransito = agenteencontrado;
+                    _appContext.SaveChanges();
+                }
+                return agenteencontrado;
+            }
+            return null;
+        }
 
     }
 }

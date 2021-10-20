@@ -1,0 +1,120 @@
+
+/* id => #*/
+#logo{
+    max-height: 100px;
+}
+
+.logo-nav{
+    position: absolute;
+
+    margin: 0px !important;
+    z-index: 10;
+    /* padding: 10px;
+    margin:0;
+    background-color: #90c390;
+    border: 0; */
+}
+
+#t{
+    font-size:52px;
+    background-color: #7ce2f6;;
+    margin-bottom: 100px;
+
+}
+
+/* ientificador de claese => class  . */
+.navbar-color{
+    background: #90c390;
+}
+
+
+.nav-imagen{
+    margin-left: 90px
+
+}
+.nav-item a{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-shadow: 0.1em 0.1em 0.2em rgb(37, 226, 125)
+
+}
+
+
+.indigo-100{
+    background-color: #f5f9fa;
+}
+
+
+.cyan-200{
+    background-color: #d5f8ff;
+}
+
+
+.navbar input.form-control{
+    background-color:#e0ffe0;
+    font-size: 14px;
+}
+
+.tituloInicial-drop{
+    background-color:#7ce2f6;
+
+}
+
+.derecha{
+  margin: 0 auto;
+}
+
+
+
+.titulo-drop{
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.75);
+    text-shadow: 2px  2px 10px #7ce2f6;
+
+}
+.dropdown-item{
+    font-weight:400;
+}
+
+
+/* /////////////////// */
+
+
+.dropdown-w3 {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-w3-content {
+    display: none;
+    position: absolute;
+    background-color: #edeeee;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+  .dropdown-w3:hover .dropdown-w3-content {
+    display: block;
+  }
+
+  /* #usua{
+    min-width: 100px;
+
+  }
+
+  #pass{
+      margin-left: 20px;
+
+  }
+  .olvido{
+      font-size: 12px;
+      min-width: 150px;
+      margin: auto;
+      margin-left: 20px;
+   }*/
+
+  #segunda{
+    margin-bottom: 25px;
+  }

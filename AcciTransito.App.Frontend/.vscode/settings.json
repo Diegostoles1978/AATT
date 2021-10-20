@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/1359bc16-b53b-446b-b27f-8d1ff79f7f90/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/AccidentesViales",
+    "appService.deploySubpath": "publish"
+}

@@ -1,0 +1,12 @@
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Persistencia\bin\Release\netstandard2.1\AcciTransito.App.Persistencia.deps.json
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Persistencia\bin\Release\netstandard2.1\AcciTransito.App.Persistencia.dll
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Persistencia\bin\Release\netstandard2.1\AcciTransito.App.Persistencia.pdb
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Persistencia\bin\Release\netstandard2.1\AcciTransito.App.Dominio.dll
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Persistencia\bin\Release\netstandard2.1\AcciTransito.App.Dominio.pdb
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Persistencia\obj\Release\netstandard2.1\AcciTransito.App.Persistencia.csprojAssemblyReference.cache
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Persistencia\obj\Release\netstandard2.1\AcciTransito.App.Persistencia.AssemblyInfoInputs.cache
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Persistencia\obj\Release\netstandard2.1\AcciTransito.App.Persistencia.AssemblyInfo.cs
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Persistencia\obj\Release\netstandard2.1\AcciTransito.App.Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Persistencia\obj\Release\netstandard2.1\AcciTransito.App.Persistencia.csproj.CopyComplete
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Persistencia\obj\Release\netstandard2.1\AcciTransito.App.Persistencia.dll
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Persistencia\obj\Release\netstandard2.1\AcciTransito.App.Persistencia.pdb

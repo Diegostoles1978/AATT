@@ -1,0 +1,33 @@
+@page
+@model AcciTransito.App.Frontend.Pages.PersonasGeneroModel
+@{
+}
+<body>
+<h3>Personas Genero Masculino</h3>
+<table class="table table-bordered">
+     <tr>
+
+
+
+ <th scope="col" > Nombres</td>
+ <th scope="col" > Apellidos</td>
+
+<caption>Información Personas</caption>
+
+ <th scope="col" > Genero</td>
+
+
+    @foreach (var genero in Model.generos)
+    {
+       <tr>
+            <td > @genero.Nombres</td>
+            <td > @genero.Apellidos</td>
+
+      </tr>
+
+   }
+</table>
+</body>
+
+
+

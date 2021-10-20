@@ -9,6 +9,7 @@ namespace AcciTransito.App.Persistencia
         IEnumerable<Accidentes> GetAllAccidente();
         Accidentes AddAccidente(Accidentes accidente);
         void DeleteAccidente(int id);
+        AgenteTransito AsignarAgente(int idaccidente, int idAgente);
         Accidentes GetAccidente(int id);
 
 

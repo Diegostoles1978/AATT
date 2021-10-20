@@ -65,7 +65,20 @@ namespace AcciTransito.App.Persistencia
 
             return personasEncontrada;
         }
+            IEnumerable<Personas> IRepositorioPersonas.GetPersonasGenero()
+        {
 
+            return _appContext.Personas.Where(p => p.Genero == Genero.Masculino).ToList();
+
+        }
+
+        // public IEnumerable<Personas> GetPersonasGenero()
+        // {
+
+        //     return _appContext.Personas
+        //                            .Where(p => p.SignosVitales.Any(s =>  TipoSigno.FrecuenciaCardica==s.Signo && s.Valor >=90))
+        //                            .ToList();
+        // }
         }
 
     }

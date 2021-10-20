@@ -39,6 +39,14 @@ namespace AcciTransito.App.Frontend.Pages
             }
 
         }
+
+    //   private static void AsignarMedico()
+    //     {
+    //         var medico = _repoPaciente.AsignarMedico(1, 2);
+    //         Console.WriteLine(medico.Nombre + " " + medico.Apellidos);
+    //     }
+
+
          public IActionResult OnPost()
         {
             if(!ModelState.IsValid)

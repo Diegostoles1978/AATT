@@ -6,13 +6,13 @@
 
 
     .round1{
-        background-color: white;
-        margin:0 auto;
+        background-color: #90c390;
+       @*  margin:0 auto;
         margin-top:3%;
         padding:0;
         @* text-align:center; *@
-        border: 3px solid green;
-        border-radius: 12px;
+        border: 3px solid #90c390;
+        border-radius: 8px;
         padding: 5px;
     }
 </style>
@@ -22,7 +22,7 @@
     <input type="hidden" asp-for="personas1.id"/>
 
 <div class="row" >
-      <div class="col-sm-12 round1">
+      <div class="col-sm-11 round1">
 
             <div class="d-grid gap-1 col-3 mx-auto text-center">
                 <label asp-for="personas1.NumeroIdentificacion">No. Documento de Identidad:</label>
@@ -62,9 +62,9 @@
 
                     </select>
                     <span class="text-danger" asp-validation-for="personas1.TipoDocumento"></span>
-                <label asp-for="personas1.NumeroIdentificacion">No. Documento de Identidad:</label>
+               @*  <label asp-for="personas1.NumeroIdentificacion">No. Documento de Identidad:</label>
                 <input asp-for="personas1.NumeroIdentificacion" class="form-id" placeholder="Escriba su numero de documento"/> <br>
-                       <span class="text-danger" asp-validation-for="personas1.NumeroIdentificacion"></span>
+                       <span class="text-danger" asp-validation-for="personas1.NumeroIdentificacion"></span> *@
 
                  <label asp-for="personas1.Direccion">Dirección de residencia:</label>
                 <input asp-for="personas1.Direccion" class="form-direccion" placeholder="Escriba su direccion" />

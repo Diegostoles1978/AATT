@@ -10,27 +10,26 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 namespace AcciTransito.App.Frontend.Pages
 {
 
-   public class ListModel5 : PageModel
+   public class ListaAccidentesModel : PageModel
     {
 
        private readonly IRepositorioAccidente repositorioaccidente;
-       private readonly IRepositorioPersonas repositoriopersonas;
-       public   IEnumerable<Accidentes> accidentes {get;set;}
-       public   IEnumerable<Personas> per {get;set;}
 
-       public ListModel5(IRepositorioAccidente repositorioaccidente, IRepositorioPersonas repositoriopersonas)
+       public   IEnumerable<Accidentes> accidentes {get;set;}
+
+
+       public ListaAccidentesModel(IRepositorioAccidente repositorioaccidente )
        {
             this.repositorioaccidente=repositorioaccidente;
-             this.repositoriopersonas=repositoriopersonas;
-       }
 
+       }
 
 
         public void OnGet()
         {
 
           accidentes=repositorioaccidente.GetAllAccidente();
-          per=repositoriopersonas.GetAllPersona();
+
 
         }
     }

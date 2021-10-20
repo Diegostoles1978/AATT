@@ -3,24 +3,23 @@
 @{
 }
 <style>
-
-
     .round1{
-        background-color: white;
-        margin:0 auto;
+        background-color: #90c390;
+        @* margin:0 auto; *@
         margin-top:3%;
         padding:0;
         @* text-align:center; *@
-        border: 3px solid green;
+        border: 3px solid #90c390;
         border-radius: 12px;
         padding: 5px;
     }
 </style>
+
 <h4>Editar Vehiculo: @Model.vehiculos.id</h4>
 <form method="post">
     <input type="hidden" asp-for="vehiculos.id"/>
       <div class="row" >
-      <div class="col-sm-12 round1">
+      <div class="col-sm-8 round1">
 
             <div class="d-grid gap-1 col-3 mx-auto text-center">
                 <label asp-for="vehiculos.Placa">No.Placa:</label>

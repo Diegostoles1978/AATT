@@ -13,6 +13,9 @@ namespace AcciTransito.App.Persistencia
        Personas GetPersonas(int id);
 
         Personas UpdatePersonas(Personas persona);
+
+        IEnumerable<Personas> GetPersonasGenero();
+
     }
 
 

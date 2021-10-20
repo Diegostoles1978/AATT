@@ -1,0 +1,9 @@
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Dominio\bin\Release\netstandard2.0\AcciTransito.App.Dominio.deps.json
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Dominio\bin\Release\netstandard2.0\AcciTransito.App.Dominio.dll
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Dominio\bin\Release\netstandard2.0\AcciTransito.App.Dominio.pdb
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Dominio\obj\Release\netstandard2.0\AcciTransito.App.Dominio.csprojAssemblyReference.cache
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Dominio\obj\Release\netstandard2.0\AcciTransito.App.Dominio.AssemblyInfoInputs.cache
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Dominio\obj\Release\netstandard2.0\AcciTransito.App.Dominio.AssemblyInfo.cs
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Dominio\obj\Release\netstandard2.0\AcciTransito.App.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Dominio\obj\Release\netstandard2.0\AcciTransito.App.Dominio.dll
+C:\Users\mileniso\Documents\GitHub\AATT\AcciTransito.App.Dominio\obj\Release\netstandard2.0\AcciTransito.App.Dominio.pdb

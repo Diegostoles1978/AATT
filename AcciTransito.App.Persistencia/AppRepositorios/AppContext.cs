@@ -19,7 +19,9 @@ namespace AcciTransito.App.Persistencia
         if (!optionsBuilder.IsConfigured)
          {
 
-         optionsBuilder.UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = Accidentes_Transito");
+        optionsBuilder.UseSqlServer("Server=tcp:missiontic2022.database.windows.net,1433;Initial Catalog=Accidentes_Transito;Persist Security Info=False;User ID=admin_01;Password=Siniestros4*;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+
+        //  optionsBuilder.UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = Accidentes_Transito");
          }
     }
     }

@@ -69,8 +69,8 @@ namespace AcciTransito.App.Persistencia.Migrations
                     b.Property<string>("Grupo")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Nombres")
-                        .HasColumnType("int");
+                    b.Property<string>("Nombres")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NumeroAgente")
                         .HasColumnType("nvarchar(max)");
@@ -173,12 +173,16 @@ namespace AcciTransito.App.Persistencia.Migrations
                         .UseIdentityColumn();
 
                     b.Property<string>("LicenciaTransito")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Marca")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(6)
+                        .HasColumnType("nvarchar(6)");
 
                     b.Property<string>("Modelo")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("Personaid")
@@ -188,6 +192,7 @@ namespace AcciTransito.App.Persistencia.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TipoVehiculo")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("id");

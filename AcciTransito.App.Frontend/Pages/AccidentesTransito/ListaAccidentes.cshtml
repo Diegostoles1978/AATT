@@ -1,5 +1,5 @@
 @page
-@model AcciTransito.App.Frontend.Pages.ListModel5
+@model AcciTransito.App.Frontend.Pages.ListaAccidentesModel
 @{
 }
 
@@ -28,6 +28,7 @@ else
 
             <td> @acci.NumeroAccidente</td>
             <td> @acci.TipoAccidente</td>
+            <td> @acci.AgenteTransito</td>
 
             <td> <a class="btn btn-success" asp-page="/AccidentesTransito/ListaPersonas" asp-route-id="@acci.id">
                 <i class="fas fa-male"></i></a></td>
